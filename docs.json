@@ -95,5 +95,9 @@
     "socials": {
       "website": "https://timenest.app"
     }
+  },
+  "logo": {
+    "light": "/logo/timenest-light-full.png",
+    "dark": "/logo/timenest-dark-full.png"
   }
 }
