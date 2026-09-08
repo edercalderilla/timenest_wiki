@@ -1,28 +1,17 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "TimeNest",
+  "projectType": "saas",
+  "projectName": "TimeNest",
+  "projectDescription": "Plataforma SaaS de agendamiento de citas en línea para negocios y proveedores de servicios, con recordatorios automáticos por WhatsApp para reducir las inasistencias.",
   "theme": "almond",
-  "favicon": "https://media.brand.dev/ab4421ad-02c1-4b50-8342-e4d0cedd1b00.svg",
-  "colors": {
-    "primary": "#d9f15f",
-    "light": "#0f0d33",
-    "dark": "#ffffff"
+  "primaryColor": "#d9f15f",
+  "lightColor": "#0f0d33",
+  "darkColor": "#ffffff",
+  "fonts": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono"
   },
-  "appearance": {
-    "default": "dark"
-  },
-  "font": {
-    "headings": { "family": "Inter" },
-    "body": { "family": "Inter" },
-    "mono": { "family": "JetBrains Mono" }
-  },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Empieza gratis",
-      "href": "https://timenest.app/registro"
-    }
-  },
+  "colorMode": "dark",
   "navigation": {
     "groups": [
       {
@@ -91,9 +80,21 @@
       }
     ]
   },
-  "footer": {
-    "socials": {
-      "website": "https://timenest.app"
-    }
-  }
+  "keyFeatures": [
+    "Página de reservas pública sin descargar ninguna app",
+    "Recordatorios y confirmaciones automáticos por WhatsApp",
+    "Gestión de citas con vista de agenda (día, semana, mes)",
+    "Múltiples servicios con duración y precio por servicio",
+    "Gestión de horarios de atención y bloqueos de tiempo",
+    "Administración de personal con calendarios individuales",
+    "Perfiles de clientes con historial y notas",
+    "Múltiples sucursales (plan Pro)",
+    "Sincronización con Google Calendar (plan Pro)",
+    "Roles de usuario: Titular, Gerente y Profesional",
+    "Política de cancelación configurable",
+    "Notificaciones en tiempo real al equipo",
+    "Planes Gratis y Pro con límites de mensajes WhatsApp por ciclo",
+    "Pagos procesados a través de Mercado Pago"
+  ],
+  "publicApiSurface": []
 }
