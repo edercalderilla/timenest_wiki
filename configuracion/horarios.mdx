@@ -1,31 +1,34 @@
 ---
 title: "Configura los horarios de atención de tu negocio en TimeNest"
 sidebarTitle: "Horarios"
-description: "Define los días y horas en que tu negocio y cada profesional atienden para que solo aparezcan los huecos disponibles en tu página de reservas."
+description: "Define los días y horas en que cada sucursal y cada profesional atienden, agrega descansos y define la anticipación mínima para reservar en línea."
 ---
 
-Los horarios determinan qué huecos muestra tu página de reservas a los clientes. Si un día o una franja horaria no está habilitada, los clientes simplemente no podrán agendar en ese momento. Configurar bien los horarios —tanto del negocio como de cada profesional— evita citas fuera de tu horario real y elimina la necesidad de rechazarlas manualmente.
+Los horarios determinan qué huecos muestra tu página de reservas a los clientes. Si un día o una franja horaria no está habilitada, los clientes simplemente no podrán agendar en ese momento. Configurar bien los horarios, tanto de cada sucursal como de cada profesional, evita citas fuera de tu horario real y elimina la necesidad de rechazarlas manualmente.
 
-## Horario del negocio
+## Horario de la sucursal
 
-El horario del negocio define el rango máximo de disponibilidad para todas las sucursales. Ningún profesional puede tener huecos fuera de este rango.
+El horario de cada sucursal define el rango máximo de disponibilidad de esa sede. Ningún profesional puede tener huecos fuera de este rango en esa sucursal.
 
 <Steps>
   <Step title="Abre la configuración de horarios">
-    Ve a **Ajustes → Negocio → Horarios**.
+    Ve a **Ajustes → Negocio → Horarios**. Si tienes varias sucursales, selecciona la pestaña de la sede que quieres configurar.
   </Step>
   <Step title="Activa los días de atención">
-    Usa el interruptor junto a cada día de la semana para habilitarlo o deshabilitarlo.
+    Usa el interruptor junto a cada día de la semana para habilitarlo o deshabilitarlo. Los días desactivados aparecen como **Cerrado**.
   </Step>
   <Step title="Define las horas de apertura y cierre">
-    Para cada día activo, establece la hora de inicio y la hora de cierre. Puedes configurar horas distintas para cada día.
+    Para cada día activo, establece la hora de inicio (**De**) y la hora de cierre (**a**). Puedes configurar horas distintas para cada día.
+  </Step>
+  <Step title="Agrega descansos (opcional)">
+    Haz clic en **+ Descanso** para partir el día en dos tramos, por ejemplo para la hora de la comida. Cada día admite hasta 3 tramos. Con **Quitar tramo** eliminas uno.
   </Step>
   <Step title="Guarda los cambios">
-    Haz clic en **Guardar**. Los cambios se aplican de inmediato en la página de reservas.
+    Haz clic en **Guardar horario**. Los cambios se aplican de inmediato en la página de reservas. Si cerraste un día que estaba abierto, TimeNest te lo advierte antes de guardar, porque el personal de esa sede dejará de tener disponibilidad ese día.
   </Step>
 </Steps>
 
-<img src="/images/placeholder.png" alt="Configuración del horario del negocio con días y rangos de hora" />
+<img src="/images/placeholder.png" alt="Configuración del horario de una sucursal con días, rangos de hora y descansos" />
 
 <Tip>
 Puedes establecer horas más cortas para ciertos días. Por ejemplo, si los sábados cierras antes, asigna un horario reducido solo para ese día sin afectar el resto de la semana.
@@ -35,41 +38,60 @@ Puedes establecer horas más cortas para ciertos días. Por ejemplo, si los sáb
 
 ## Horario individual de cada profesional
 
-Cada profesional puede tener su propio horario dentro del rango del negocio. Esto es útil cuando algunos miembros del equipo trabajan días o turnos distintos.
+Cada profesional puede tener su propio horario dentro del rango de cada sucursal. Esto es útil cuando algunos miembros del equipo trabajan días o turnos distintos.
 
 <Steps>
-  <Step title="Ve al perfil del profesional">
-    Ve a **Ajustes → Operación → Equipo** y selecciona al profesional que quieres configurar.
+  <Step title="Abre los horarios del profesional">
+    Ve a **Ajustes → Negocio → Equipo** y haz clic en **Ver horarios** en la tarjeta del profesional.
   </Step>
-  <Step title="Edita su horario personal">
-    Dentro del perfil, localiza la sección **Horario** y activa o desactiva los días en que trabaja ese profesional.
+  <Step title="Elige entre heredar o definir un horario propio">
+    Para cada sucursal a la que está asignado, elige **Hereda sede** (sigue el horario de atención de la sede) u **Horario propio** (días y horas propias en esa sede).
   </Step>
-  <Step title="Establece sus horas de atención">
-    Define la hora de inicio y la hora de cierre para cada día activo del profesional.
+  <Step title="Establece sus días y horas">
+    Con **Horario propio**, activa o desactiva los días y define la hora de inicio y fin de cada uno. Solo puedes habilitar días en los que la sucursal abre; los días cerrados aparecen en gris con la etiqueta **Cierra la sede**.
   </Step>
   <Step title="Guarda los cambios">
-    Haz clic en **Guardar**. Los huecos de ese profesional en la página de reservas reflejarán su horario individual.
+    Haz clic en **Guardar horario**. Los huecos de ese profesional en la página de reservas reflejarán su horario individual.
   </Step>
 </Steps>
 
-<img src="/images/placeholder.png" alt="Perfil de un profesional con la sección de horario individual" />
+<img src="/images/placeholder.png" alt="Horarios de un profesional con la opción Hereda sede u Horario propio por sucursal" />
 
 <Note>
-Si un profesional no tiene un horario individual configurado, hereda automáticamente el horario general del negocio.
+Si un profesional no tiene un horario propio configurado en una sucursal, hereda automáticamente el horario de esa sede.
 </Note>
 
-La disponibilidad real de un profesional es la intersección de su horario personal y el horario del negocio. Por ejemplo, si el negocio atiende hasta las 8 p.m. pero el profesional tiene su horario definido hasta las 6 p.m., los clientes solo verán huecos hasta las 6 p.m. para ese profesional.
+La disponibilidad real de un profesional es la intersección de su horario y el horario de la sucursal. Por ejemplo, si la sede atiende hasta las 8 p.m. pero el profesional tiene su horario definido hasta las 6 p.m., los clientes solo verán huecos hasta las 6 p.m. para ese profesional.
 
 ---
 
-## Tiempo entre citas
+## Anticipación mínima de reserva
 
-El tiempo de preparación es un periodo que se agrega automáticamente después de cada cita de un profesional. Sirve para que tenga tiempo de limpiar su espacio, preparar materiales o tomar un descanso breve antes de atender al siguiente cliente.
+Puedes exigir que los clientes reserven con cierta anticipación en la página pública, para que no aparezcan huecos que empiezan en unos minutos. Esta regla se configura por sucursal y solo afecta a las reservas en línea: tu equipo puede seguir creando citas manuales a cualquier hora desde el panel.
 
-Para configurarlo, ve al perfil del profesional en **Ajustes → Operación → Equipo** y busca la opción **Tiempo entre citas**. Establece los minutos de preparación que necesita. Ese tiempo no aparecerá como hueco disponible en la página de reservas.
+<Steps>
+  <Step title="Abre la configuración">
+    Ve a **Ajustes → Negocio → Anticipación de reserva** y selecciona la sucursal.
+  </Step>
+  <Step title="Activa la regla de la sede">
+    Enciende **Exigir anticipación mínima**. En **Reservar con**, define el margen en **Min** (de 15 minutos a 24 horas, en pasos de 15), **Horas** (de 1 a 24) o **Días** (de 1 a 14).
 
-<img src="/images/placeholder.png" alt="Configuración del tiempo entre citas en el perfil del profesional" />
+    Con la unidad **Días**, el margen se cuenta en días naturales desde la apertura de la sede, no en bloques de 24 horas: con 1 día, a cualquier hora de hoy el cliente ya solo ve huecos a partir de mañana.
+  </Step>
+  <Step title="Permite reglas propias por profesional (opcional)">
+    Activa **Permitir configuración propia por profesional** para que, en la lista **Personal que recibe citas**, puedas cambiar a un profesional de **Hereda** a **Propia** y definirle su propio margen en esa sede.
+  </Step>
+  <Step title="Guarda los cambios">
+    Haz clic en **Guardar cambios**. La vista previa de la sección te muestra cuál sería el primer hueco reservable en este momento.
+  </Step>
+</Steps>
+
+<img src="/images/placeholder.png" alt="Sección Anticipación de reserva con la regla de la sede y la lista de profesionales" />
+
+<Note>
+Cuando la regla está activa, la página de reservas le indica al cliente cuánta anticipación pide tu negocio (o ese profesional) y desde qué fecha puede reservar.
+</Note>
 
 <Warning>
-Los cambios en el horario del negocio o de un profesional no afectan las citas ya confirmadas. Solo impactan los huecos disponibles para nuevas reservas a partir del momento en que guardas los cambios.
+Los cambios en el horario de una sucursal o de un profesional no afectan las citas ya registradas. Solo impactan los huecos disponibles para nuevas reservas a partir del momento en que guardas los cambios.
 </Warning>

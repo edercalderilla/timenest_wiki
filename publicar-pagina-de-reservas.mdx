@@ -10,24 +10,26 @@ Tu página de reservas es una URL pública donde tus clientes eligen servicio, P
 
 <Steps>
   <Step title="Asegúrate de tener al menos un servicio y un profesional configurados">
-    Antes de compartir el link, verifica que tu sucursal tiene al menos un servicio habilitado y un Profesional activo. Sin estos datos, el flujo de reserva no puede completarse.
+    Antes de compartir el link, verifica que tu sucursal tiene al menos un servicio con la opción **Reservable en línea** activada y un Profesional activo, asignado a esa sucursal y que preste ese servicio. Sin estos datos, el flujo de reserva no puede completarse.
 
     - Para agregar servicios: ve a [Ajustes → Negocio → Servicios y precios](/configuracion/servicios).
-    - Para agregar personal: ve a [Ajustes → Operación → Equipo](/configuracion/personal).
+    - Para agregar personal: ve a [Ajustes → Negocio → Equipo](/configuracion/personal).
   </Step>
-  <Step title="Ve a Ajustes → Operación → Sucursales">
-    En el panel, haz clic en **Ajustes** en el menú lateral. Dentro del grupo **Operación**, selecciona **Sucursales** y elige la sucursal que quieres publicar.
+  <Step title="Verifica que las reservas online están activas">
+    Ve a **Ajustes → Negocio → Perfil del negocio** y confirma que el interruptor **Reservas online activas** está encendido. Si tienes varias sucursales, revisa además en **Ajustes → Negocio → Sucursales** que la sede esté marcada como **Sede activa**.
   </Step>
   <Step title="Copia el link de reservas">
-    En la página de la sucursal, localiza la sección **Enlace público y QR**. Haz clic en **Copiar URL de reservas** para copiar el link al portapapeles.
+    En **Ajustes → Negocio → Perfil del negocio**, en el campo **URL de reservas**, haz clic en **Copiar URL de reservas** para copiar el link de tu negocio al portapapeles.
 
     El link tiene este formato:
 
     ```
-    timenest.app/{tu-negocio}/{sucursal}
+    timenest.app/{tu-negocio}
     ```
 
-    <img src="/images/placeholder.png" alt="Sección de enlace público en la configuración de una sucursal, mostrando el link copiable y el código QR descargable" />
+    Si tienes varias sucursales y quieres compartir una en particular, usa su URL directa `timenest.app/{tu-negocio}/{sucursal}`, que puedes abrir con **Ver página pública** desde **Ajustes → Negocio → Sucursales**.
+
+    <img src="/images/placeholder.png" alt="Sección de enlace público en la configuración del negocio, mostrando el link copiable y el código QR descargable" />
   </Step>
   <Step title="Comparte el link con tus clientes">
     Coloca el link en los lugares donde tus clientes te buscan:
@@ -36,6 +38,7 @@ Tu página de reservas es una URL pública donde tus clientes eligen servicio, P
     - **Perfil de WhatsApp Business**: agrégalo en la descripción o en el mensaje de bienvenida automático.
     - **Sitio web o blog**: insértalo como botón de "Reservar ahora".
     - **Google Business Profile**: agrégalo en la sección de citas o como enlace de acción.
+    - **En tu local**: imprime el código QR que descargas con **Descargar QR** (disponible según tu plan).
   </Step>
   <Step title="Haz una prueba desde tu teléfono">
     Abre el link desde el navegador de tu teléfono como si fueras un cliente. Completa el flujo de reserva de principio a fin para verificar que todo funciona correctamente. Puedes cancelar la cita de prueba desde tu panel una vez que confirmes que todo está bien.
@@ -46,17 +49,44 @@ Tu página de reservas es una URL pública donde tus clientes eligen servicio, P
 
 ## ¿Cómo ve el proceso tu cliente?
 
-Cuando un cliente abre tu link de reservas, sigue estos pasos:
+Cuando un cliente abre el link de una sucursal, ve la página de la sede con tu logo, portada, descripción, horario, galería, redes sociales y los botones **Ubicación**, **Llamar** y **WhatsApp** (si la sede tiene teléfono). Al pulsar **Crear cita** sigue estos pasos:
 
-1. **Selecciona el servicio**: elige el servicio que quiere reservar del catálogo de tu sucursal, con su duración y precio.
-2. **Elige al Profesional**: selecciona con qué miembro de tu equipo quiere ser atendido, o elige "Cualquier profesional" si no tiene preferencia.
-3. **Elige fecha y horario**: ve un calendario con los días disponibles y los Huecos libres para esa fecha.
-4. **Ingresa sus datos personales**: escribe su nombre completo, número de teléfono móvil y, de manera opcional, su correo electrónico y notas adicionales.
-5. **Recibe la confirmación**: al confirmar la reserva, TimeNest le envía automáticamente un mensaje de confirmación por WhatsApp con todos los detalles de su cita.
+1. **Selecciona el servicio**: elige un servicio del catálogo de tu sucursal, con su duración y precio.
+2. **Elige al Profesional**: selecciona con qué miembro de tu equipo quiere ser atendido. Solo aparecen los profesionales que prestan ese servicio en esa sede.
+3. **Elige fecha y horario**: ve un calendario con los días disponibles y los Huecos libres para esa fecha, agrupados en Mañana, Tarde y Noche. Si configuraste una anticipación mínima, la página se lo indica.
+4. **Ingresa sus datos**: escribe su nombre completo, su número de teléfono móvil (de México o Estados Unidos, 10 dígitos) y, de manera opcional, su correo electrónico y notas. La casilla de aceptación de los términos de servicio y la política de privacidad viene marcada.
+5. **Verifica su número (solo si lo activaste)**: si tu negocio pide verificación por SMS y es un cliente nuevo, recibe un código de 6 dígitos por SMS y lo escribe para continuar.
+6. **Recibe la confirmación**: la pantalla final muestra el resumen de la cita con los botones **Agregar a Google Calendar**, **Cancelar cita** y **Nueva cita**. Si tienes activado el aviso de reserva, TimeNest le envía un mensaje de confirmación por WhatsApp con un enlace para ver o cancelar su cita.
 
 <Note>
-  La página de reservas es siempre pública. Tus clientes no necesitan crear una cuenta ni iniciar sesión para reservar. Solo necesitan su número de WhatsApp para recibir la confirmación y el Recordatorio.
+  La cita queda registrada en tu panel con estado **Pendiente**. Cambia a **Confirmada** cuando tú la confirmas desde el panel o cuando el cliente responde **Sí asistiré** al mensaje de confirmación de asistencia.
 </Note>
+
+<Note>
+  La página de reservas es pública. Tus clientes no necesitan crear una cuenta ni iniciar sesión para reservar. Solo necesitan su número de WhatsApp para recibir la confirmación y el Recordatorio. La página está disponible en español y en inglés; el cliente puede cambiar de idioma desde el selector de la parte superior.
+</Note>
+
+## Link de reserva por profesional
+
+Cada profesional tiene también su propia página pública dentro de cada sucursal, con la lista de servicios que presta y sus precios. Al elegir un servicio desde ahí, el cliente salta directamente al paso de fecha y horario con ese profesional ya seleccionado. Para obtener ese link, ve a **Ajustes → Negocio → Equipo** y usa **Link de reserva** en la tarjeta del profesional.
+
+## Verificación por SMS de clientes nuevos
+
+Para evitar reservas falsas, puedes exigir que los clientes nuevos verifiquen su número de teléfono antes de reservar. Esta función depende de tu plan.
+
+1. Ve a **Ajustes → Operación → Verificación por SMS**.
+2. Activa **Verificar el teléfono de clientes nuevos**.
+3. Haz clic en **Guardar cambios**.
+
+A partir de ese momento, un cliente cuyo teléfono no está en tu lista de clientes recibe un código de 6 dígitos por SMS al reservar. Los clientes que ya están registrados en tu negocio, y las citas que crea tu equipo desde el panel, no pasan por la verificación. Una vez verificado, no se le vuelve a pedir el código.
+
+<Note>
+  Los SMS de verificación no consumen la cuota de mensajes de WhatsApp de tu plan. Si tu plan no incluye esta función, la sección muestra el aviso **No incluido en tu plan**.
+</Note>
+
+## Anticipación mínima de reserva
+
+Si no quieres que un cliente reserve un hueco que empieza en unos minutos, configura una anticipación mínima por sucursal en **Ajustes → Negocio → Anticipación de reserva**. Consulta [Horarios](/configuracion/horarios) para los detalles.
 
 <Tip>
   Si tienes más de un link que compartir en Instagram, usa una herramienta como Linktree o Beacons para crear una página de inicio con todos tus links, incluyendo el de reservas. Así no ocupas el único espacio de link de tu bio con un solo destino.

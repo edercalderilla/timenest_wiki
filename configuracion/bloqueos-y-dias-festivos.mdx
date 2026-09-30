@@ -1,75 +1,89 @@
 ---
 title: "Bloquea fechas, horas y días festivos en tu agenda"
 sidebarTitle: "Bloqueos"
-description: "Aprende a bloquear rangos de tiempo, días completos o periodos de vacaciones para que no aparezcan huecos disponibles en esas fechas."
+description: "Aprende a registrar cierres de sucursal, días festivos y ausencias de tu equipo para que no aparezcan huecos disponibles en esas fechas."
 ---
 
-Un bloqueo es una reserva interna que cierra huecos en la agenda sin que sea una cita de cliente. Puedes usarlo para marcar vacaciones, días festivos, tiempos de capacitación, comidas o cualquier periodo en que un profesional o todo el negocio no esté disponible. Durante el bloqueo, esos huecos desaparecen de la página de reservas y los clientes no pueden agendar en ese rango.
+Un cierre o una ausencia es un bloqueo interno que quita huecos de la agenda sin que sea una cita de cliente. Puedes usarlo para marcar días festivos, vacaciones, mantenimiento, cierres anticipados o cualquier periodo en que un profesional o toda una sucursal no esté disponible. Durante el bloqueo, esos huecos desaparecen de la página de reservas y los clientes no pueden agendar en ese rango.
 
-## Crear un bloqueo de tiempo
+TimeNest distingue dos tipos de bloqueo:
+
+- **Cierres y excepciones de la sucursal**: afectan a toda la sede y a todo su equipo. Se gestionan desde **Horarios**.
+- **Ausencias y excepciones de un profesional**: afectan solo a esa persona. Se gestionan desde **Equipo**.
+
+## Cerrar una sucursal un día o unas horas
 
 <Steps>
-  <Step title="Ve a la Agenda">
-    Desde el menú principal, abre la **Agenda**.
+  <Step title="Ve a Horarios">
+    Ve a **Ajustes → Negocio → Horarios** y selecciona la pestaña de la sucursal.
   </Step>
-  <Step title="Selecciona un hueco libre">
-    Haz clic en el hueco de la fecha y hora que quieres bloquear.
-  </Step>
-  <Step title="Elige Bloquear tiempo">
-    En el menú que aparece, selecciona **Bloquear tiempo**.
+  <Step title="Añade un cierre">
+    En la sección **Cierres y excepciones**, haz clic en **Añadir**.
 
-    <img src="/images/placeholder.png" alt="Menú de opciones al hacer clic en un hueco libre de la Agenda" />
+    <img src="/images/placeholder.png" alt="Sección Cierres y excepciones dentro de Horarios" />
   </Step>
-  <Step title="Define el alcance del bloqueo">
-    Elige si el bloqueo aplica a un **profesional específico** o a **todo el negocio**.
+  <Step title="Elige el tipo de cierre">
+    Selecciona el **Tipo de cierre**: **Festivo**, **Cierre**, **Cierre anticipado**, **Mantenimiento** u **Otro**. Si eliges **Otro**, escribe un **Título** para identificarlo.
   </Step>
-  <Step title="Establece la fecha y los horarios">
-    Define la fecha, la hora de inicio y la hora de fin del bloqueo.
+  <Step title="Define el alcance">
+    En **Bloqueo**, elige **Día completo** o **Cierre parcial**.
+
+    - Con **Día completo**, indica la fecha **Desde** y, si quieres bloquear varios días seguidos (por ejemplo, vacaciones), la fecha **Hasta (opcional)**.
+    - Con **Cierre parcial**, indica la **Fecha** y el **Horario** (hora de inicio y de fin) que quieres bloquear.
   </Step>
-  <Step title="Agrega una nota interna (opcional)">
-    Puedes escribir una nota para identificar el motivo del bloqueo. Esta nota es solo visible para el equipo, no para los clientes.
-  </Step>
-  <Step title="Guarda el bloqueo">
-    Haz clic en **Guardar**. El rango queda marcado en la Agenda y desaparece de los huecos disponibles en la página de reservas.
+  <Step title="Guarda el cierre">
+    Haz clic en **Guardar cierre**. El cierre se aplica de inmediato y solo afecta a esa sucursal.
   </Step>
 </Steps>
 
+Para eliminar un cierre, haz clic en la **X** de su fila en la lista. Los cierres no se pueden editar: elimina el cierre y crea uno nuevo.
+
 <Note>
-Crear un bloqueo no cancela automáticamente las citas que ya existen en ese rango de tiempo. Revisa tu Agenda antes de guardar el bloqueo y gestiona manualmente las citas afectadas.
+Registrar un cierre o una ausencia no cancela automáticamente las citas que ya existen en ese rango de tiempo. Revisa tu Agenda antes de guardarlo y cancela manualmente las citas afectadas.
 </Note>
 
 ---
 
-## Bloquear un día completo
+## Registrar la ausencia de un profesional
 
-El flujo es el mismo que para un bloqueo por horas, con una diferencia: al definir el rango de tiempo, activa la opción **Todo el día**. Esto bloquea las 24 horas de esa fecha para el profesional o negocio seleccionado, sin necesidad de ingresar hora de inicio y hora de fin.
+<Steps>
+  <Step title="Abre los horarios del profesional">
+    Ve a **Ajustes → Negocio → Equipo** y haz clic en **Ver horarios** en la tarjeta del profesional.
+  </Step>
+  <Step title="Añade una ausencia">
+    En la sección **Ausencias y excepciones**, haz clic en **Añadir**.
+  </Step>
+  <Step title="Completa la ausencia">
+    - **Tipo de ausencia**: **Vacaciones**, **Cita médica**, **Cierre anticipado**, **Día libre**, **Formación** u **Otro** (con un **Título** propio).
+    - **Sede afectada**: **Todas las sedes** o una sucursal concreta. Las ausencias sin sede bloquean la agenda del profesional en todas; las asignadas a una sede solo bloquean allí.
+    - **Bloqueo**: **Día completo** (con fecha **Desde** y **Hasta (opcional)** para varios días) o **Bloqueo parcial** (con **Fecha** y **Horario**).
+  </Step>
+  <Step title="Guarda la ausencia">
+    Haz clic en **Guardar ausencia**. Los huecos del profesional desaparecen de la página de reservas en ese periodo.
+  </Step>
+</Steps>
 
-<img src="/images/placeholder.png" alt="Formulario de bloqueo con la opción Todo el día activada" />
-
----
-
-## Bloquear varios días (vacaciones)
-
-Para periodos largos como vacaciones o cierres por temporada, puedes definir un rango de fechas en lugar de crear bloqueos individuales por día.
-
-Al crear el bloqueo, selecciona una **fecha de inicio** y una **fecha de fin** distintas. TimeNest bloqueará todos los días dentro de ese rango. Durante ese periodo, ningún hueco aparecerá en la página de reservas para el profesional o el negocio que hayas seleccionado.
-
-<img src="/images/placeholder.png" alt="Formulario de bloqueo con rango de fechas para vacaciones" />
+<img src="/images/placeholder.png" alt="Formulario de nueva ausencia con tipo, sede afectada y rango de fechas" />
 
 <Tip>
-Crea el bloqueo de vacaciones con anticipación para que los clientes no agenden citas en esas fechas antes de que te des cuenta.
+Crea los cierres por vacaciones con anticipación para que los clientes no agenden citas en esas fechas antes de que te des cuenta.
 </Tip>
 
 ---
 
-## Solicitudes de ausencia del personal
+## Solicitudes de tu equipo
 
-Los profesionales pueden solicitar ausencias directamente desde su propio panel sin necesidad de coordinar de forma manual contigo. Una solicitud de ausencia es distinta a un bloqueo: la crea el profesional, pero requiere tu aprobación antes de aplicarse a la agenda.
+Un profesional que no tiene el permiso **Editar su propio horario** no puede cambiar su horario semanal por su cuenta: sus propuestas de horario y sus ausencias llegan como una solicitud que requiere tu aprobación antes de aplicarse a la agenda.
 
-Para revisar y aprobar solicitudes pendientes, ve a **Solicitudes** en el menú principal. Desde ahí puedes aprobar o rechazar cada solicitud. Al aprobarla, los huecos del profesional en ese periodo se bloquean automáticamente en la página de reservas.
+Para revisarlas, ve a **Solicitudes** en el menú lateral. La sección muestra las solicitudes agrupadas en **Cambios de horario** y **Ausencias**, con los filtros **Pendientes**, **Aprobadas**, **Rechazadas** y **Todas**.
 
-<img src="/images/placeholder.png" alt="Lista de solicitudes de ausencia pendientes en la sección Solicitudes del menú principal" />
+- Cada solicitud de cambio de horario muestra el **Horario propuesto** para una sucursal y la nota del profesional.
+- Cada solicitud de ausencia muestra el tipo (**Vacaciones**, **Cita médica** o **Salida antes**), la sede, el motivo y las fechas.
 
-<Warning>
-Un **bloqueo** lo crea directamente el Titular o el Gerente desde la Agenda y se aplica de inmediato. Una **solicitud de ausencia** la inicia el Profesional desde su panel y no afecta la agenda hasta que el Titular o Gerente la aprueba. No confundas ambos flujos al gestionar la disponibilidad de tu equipo.
-</Warning>
+Haz clic en **Aprobar** para aplicar el cambio de inmediato, o en **Declinar** para cerrar la solicitud sin aplicar cambios. Al declinar, el profesional puede volver a enviarla. Cada solicitud nueva también aparece en tus **Avisos**.
+
+<img src="/images/placeholder.png" alt="Lista de solicitudes pendientes en la sección Solicitudes del menú principal" />
+
+<Note>
+La sección **Solicitudes** es visible para el Titular y para los miembros con el permiso **Horarios**. Consulta [Usuarios y Roles](/cuenta/usuarios-y-roles#permisos-por-nivel) para saber cómo otorgar el permiso **Editar su propio horario** y evitar el paso de aprobación.
+</Note>

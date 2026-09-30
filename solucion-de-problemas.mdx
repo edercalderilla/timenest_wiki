@@ -11,11 +11,12 @@ Antes de contactar al soporte, revisa esta guía. La mayoría de los problemas f
 <Accordion title="Los clientes no ven huecos disponibles en la página de reservas">
   Cuando la página de reservas no muestra huecos, revisa los siguientes puntos en orden:
 
-  1. Verifica que tienes al menos un **servicio activo** en tu catálogo.
-  2. Verifica que tienes al menos un **profesional activo asignado** a ese servicio.
-  3. Revisa el horario del negocio y del profesional en **Ajustes** — asegúrate de que el día de la semana esté habilitado y con un rango de horas configurado.
-  4. Revisa si hay **bloqueos de tiempo activos** en las fechas donde no aparecen huecos.
-  5. Verifica que la sucursal está activa y que su página de reservas no fue desactivada en **Ajustes → Operación → Sucursales**.
+  1. Verifica que tienes al menos un **servicio activo** con la opción **Reservable en línea** encendida y habilitado en esa sucursal.
+  2. Verifica que tienes al menos un **profesional activo asignado a esa sucursal** que preste ese servicio.
+  3. Revisa el horario de la sucursal en **Ajustes → Negocio → Horarios** y el del profesional en **Ajustes → Negocio → Equipo → Ver horarios**. Asegúrate de que el día de la semana esté habilitado y con un rango de horas configurado.
+  4. Revisa si hay **cierres** de la sucursal o **ausencias** del profesional en las fechas donde no aparecen huecos.
+  5. Revisa la **anticipación mínima** en **Ajustes → Negocio → Anticipación de reserva**: con un margen en días, los huecos de hoy no aparecen.
+  6. Verifica que la sucursal está marcada como **Sede activa** en **Ajustes → Negocio → Sucursales** y que **Reservas online activas** está encendido en **Ajustes → Negocio → Perfil del negocio**.
 
   <img src="/images/placeholder.png" alt="Configuración de horario de profesional en Ajustes" />
 </Accordion>
@@ -23,13 +24,14 @@ Antes de contactar al soporte, revisa esta guía. La mayoría de los problemas f
 <Accordion title="Los mensajes de WhatsApp no llegan al cliente">
   Sigue estos pasos para diagnosticar el problema:
 
-  1. Ve a la sección **Mensajes** en el panel y busca el mensaje que no llegó.
-  2. Revisa el estado del mensaje: **enviado**, **entregado** o **fallido**.
-  3. Si el estado es **Fallido**: el número de teléfono del cliente puede ser incorrecto, estar fuera de servicio, o no tener WhatsApp instalado. Actualiza el teléfono en el perfil del cliente y solicita que el cliente te confirme su número de WhatsApp.
-  4. Si la **cuota mensual está agotada**, los mensajes quedan en pausa hasta el siguiente ciclo. Verifica el estado de tu cuota en **Ajustes → Cuenta → Plan**.
+  1. Ve a **Ajustes → Operación → Notificaciones** y verifica que el aviso correspondiente (**Al agendar**, **Recordatorio**, **Cancelación** o **Confirmación de asistencia**) está activado para el cliente en esa sucursal.
+  2. Ve a la sección **Mensajes** en el panel y busca el mensaje que no llegó.
+  3. Revisa el estado del mensaje: **Enviado**, **Entregado**, **Fallido** u **Omitido por límite**.
+  4. Si el estado es **Fallido**: el número de teléfono del cliente puede ser incorrecto, estar fuera de servicio, o no tener WhatsApp instalado. Revisa el motivo del fallo en la tabla y, una vez corregido, usa **Reenviar**.
+  5. Si el estado es **Omitido por límite**, la **cuota del ciclo está agotada**. Revisa tu consumo en **Ajustes → Cuenta → Facturación** o en la tarjeta **Consumo del ciclo** de **Mensajes**.
 
   <Note>
-    Con el **Plan Gratis** tienes 50 mensajes por ciclo. Con el **Plan Pro**, 350. Si necesitas más capacidad, considera cambiar de plan.
+    Si necesitas más capacidad, activa **Permitir mensajes adicionales** en **Ajustes → Cuenta → Facturación** o cambia de plan.
   </Note>
 </Accordion>
 
@@ -37,50 +39,44 @@ Antes de contactar al soporte, revisa esta guía. La mayoría de los problemas f
   Prueba lo siguiente:
 
   1. Verifica que estás usando el **correo electrónico** con el que te registraste en TimeNest.
-  2. Si olvidaste tu contraseña, usa la opción **¿Olvidaste tu contraseña?** en [timenest.app/acceder](https://timenest.app/acceder) para recibir un enlace de restablecimiento.
-  3. Si te registraste con Google, haz clic en **Continuar con Google** en lugar de ingresar correo y contraseña. No se puede iniciar sesión con contraseña en una cuenta creada con Google.
-
-  <Tip>
-    Revisa la carpeta de spam si no recibes el correo de restablecimiento en unos minutos.
-  </Tip>
+  2. Si te registraste con Google o con Apple, haz clic en **Continuar con Google** o **Continuar con Apple** en lugar de ingresar correo y contraseña. No se puede iniciar sesión con contraseña en una cuenta creada con Google o Apple.
+  3. Si ves el aviso **Tu acceso a ese negocio ya no está activo**, el Titular desactivó tu ficha o canceló tu invitación. Pídele que revise tu acceso en **Ajustes → Negocio → Equipo**.
+  4. Si ves el aviso **Demasiados intentos**, espera unos minutos e inténtalo de nuevo.
 </Accordion>
 
 <Accordion title="El cliente dice que ya canceló pero la cita sigue activa">
   Hay dos razones posibles:
 
-  1. El cliente solo puede cancelar desde el **enlace que recibió en su mensaje de confirmación de WhatsApp**. Si nunca abrió ese enlace, la cancelación no se registró.
-  2. Si la **política de cancelación** de tu negocio tiene un plazo mínimo (por ejemplo, solo se puede cancelar con 24 horas de anticipación) y ese plazo ya venció, el botón de cancelar en el enlace del cliente se desactiva automáticamente.
+  1. El cliente solo puede cancelar desde el **enlace que recibió en su mensaje de confirmación de WhatsApp** o pulsando **No podré asistir** en la confirmación de asistencia. Si nunca abrió ese enlace, la cancelación no se registró.
+  2. Si la **política de cancelación** de tu negocio tiene un plazo mínimo (por ejemplo, solo se puede cancelar con 24 horas de anticipación) y ese plazo ya venció, o si la cancelación por el cliente está desactivada, el enlace del cliente ya no muestra el botón de cancelar.
 
   En ambos casos, puedes cancelar la cita manualmente desde el panel. Búscala en **Citas** o en la **Agenda** y cancélala desde ahí.
 </Accordion>
 
 <Accordion title="Un profesional no aparece en la página de reservas">
-  Revisa estos tres puntos:
+  Revisa estos puntos:
 
-  1. Verifica que el profesional tiene **al menos un servicio asignado**. Sin servicios, no aparece como opción para los clientes.
-  2. Verifica que el profesional tiene un **horario configurado** en su ficha o que hereda el horario del negocio desde su sucursal asignada.
-  3. Verifica que la cuenta del profesional está **activa** en **Ajustes → Operación → Equipo**. Una cuenta desactivada no aparece en la página de reservas.
+  1. Verifica que el profesional tiene **al menos un servicio asignado** en **Servicios que presta**. Sin servicios, no aparece como opción para los clientes.
+  2. Verifica que el profesional está **asignado a esa sucursal** en el campo **Sucursales** de su ficha.
+  3. Verifica que tiene un **horario configurado** en esa sucursal (**Ver horarios**) o que hereda el horario de la sede.
+  4. Si es un gerente, verifica que tiene activada la opción **También atiende citas**.
+  5. Verifica que la ficha del profesional está **activa** en **Ajustes → Negocio → Equipo**. Una ficha desactivada no aparece en la página de reservas.
 
   <img src="/images/placeholder.png" alt="Tarjeta de profesional en Ajustes → Equipo con estado activo" />
 </Accordion>
 
-<Accordion title="No recibo el correo de verificación al registrarme">
-  Si el correo de verificación no llega:
-
-  1. Revisa la carpeta de **spam o correo no deseado** de tu bandeja.
-  2. Verifica que el correo que ingresaste al registrarte es correcto (sin errores tipográficos).
-  3. Espera hasta **5 minutos** — a veces hay un pequeño retraso en la entrega.
-  4. Solicita el reenvío desde la pantalla de verificación que aparece después del registro.
-
-  Si el problema persiste, intenta registrarte con una dirección de correo diferente o contacta al soporte.
+<Accordion title="Un invitado no puede aceptar la invitación">
+  1. El enlace de invitación caduca a los **7 días**. Ve a **Ajustes → Negocio → Equipo → Invitaciones pendientes** y haz clic en **Reenviar** para generar uno nuevo.
+  2. La persona debe aceptar con **el mismo correo** al que enviaste la invitación. Si ya tiene sesión abierta con otra cuenta, verá el aviso **Necesitas otra cuenta** y deberá cambiar de cuenta.
+  3. Un correo que ya es Titular de otro negocio no puede unirse a tu equipo: verá el aviso **Este correo ya tiene un negocio**.
 </Accordion>
 
 <Accordion title="El Plan Pro no se activó después de pagar">
   Sigue estos pasos:
 
-  1. Verifica en **Mercado Pago** que el pago fue procesado correctamente y que no quedó pendiente o rechazado.
-  2. Recarga la página del panel — en ocasiones la activación puede tardar unos segundos.
-  3. Si después de **10 minutos** el Plan Pro todavía no aparece activo en **Ajustes → Cuenta → Plan**, contacta al soporte con el **comprobante de pago** de Mercado Pago para que podamos verificar y activar tu plan manualmente.
+  1. Ve a **Ajustes → Cuenta → Facturación** y revisa el **Historial de periodos**. Si el periodo aparece como **Pendiente** con intentos rechazados, tu banco rechazó el cargo: usa **Reintentar cobro** o **Pagar con otra tarjeta**.
+  2. Recarga la página del panel. En ocasiones la activación puede tardar unos segundos mientras Mercado Pago confirma el pago.
+  3. Si después de **10 minutos** el plan todavía no aparece activo, escribe a [contacto@timenest.app](mailto:contacto@timenest.app) con el **comprobante de pago** de Mercado Pago para que podamos verificar y activar tu plan manualmente.
 
   <Warning>
     No realices un segundo pago sin antes contactar al soporte. Si el primer pago fue procesado, un pago duplicado requiere un proceso de reembolso.
@@ -89,4 +85,4 @@ Antes de contactar al soporte, revisa esta guía. La mayoría de los problemas f
 
 ## ¿Necesitas más ayuda?
 
-Si el problema persiste después de revisar esta guía, escríbenos a través del chat en [timenest.app](https://timenest.app). Incluye una descripción clara del problema y, si es posible, capturas de pantalla de lo que ves en el panel. Eso nos ayuda a resolver tu caso con mayor rapidez.
+Si el problema persiste después de revisar esta guía, escríbenos a [contacto@timenest.app](mailto:contacto@timenest.app). Incluye una descripción clara del problema y, si es posible, capturas de pantalla de lo que ves en el panel. Eso nos ayuda a resolver tu caso con mayor rapidez.

@@ -1,7 +1,7 @@
 ---
 title: "Cómo gestionar usuarios, roles y permisos en TimeNest"
 sidebarTitle: "Usuarios y Roles"
-description: "Aprende a agregar usuarios a tu cuenta de TimeNest, entender los roles disponibles y configurar los permisos de cada miembro del equipo."
+description: "Aprende a agregar usuarios a tu cuenta de TimeNest, entender los roles disponibles y configurar los permisos de cada nivel del equipo."
 ---
 
 En TimeNest puedes invitar a los miembros de tu equipo para que accedan al panel con su propio correo y contraseña. Cada persona recibe un rol que determina exactamente qué puede ver y hacer dentro de la plataforma, sin que tengas que compartir tus credenciales.
@@ -12,12 +12,12 @@ TimeNest tiene tres roles. Cada uno define un nivel de acceso diferente al panel
 
 | Rol | Descripción |
 |---|---|
-| **Titular** | El dueño de la cuenta. Tiene acceso completo: configuración del negocio, facturación, plan, equipo y reportes. Solo puede haber un Titular por cuenta. |
-| **Gerente** | Administra las operaciones del día a día. Puede crear y cancelar citas, gestionar clientes, y modificar servicios y horarios. No puede acceder a facturación ni cambiar el plan. |
-| **Profesional** | Ve y gestiona únicamente sus propias citas y su agenda. Sus permisos adicionales los configura el Titular o Gerente desde **Ajustes → Operación → Permisos**. |
+| **Titular** | El dueño de la cuenta. Tiene acceso completo: perfil del negocio, facturación, plan, permisos, reportes y equipo. Solo puede haber un Titular por cuenta. |
+| **Gerente** | Administra las operaciones del día a día en las sucursales que gestiona: puede crear y cancelar citas, gestionar clientes, y modificar servicios y horarios, según los permisos del nivel Gerente. No puede acceder al perfil del negocio, a los reportes ni a la facturación. |
+| **Profesional** | Ve y gestiona únicamente sus propias citas y su agenda. Sus permisos adicionales los configura el Titular desde **Ajustes → Negocio → Permisos**. |
 
 <Note>
-Solo puede haber un Titular por cuenta. Si necesitas transferir la titularidad a otra persona, contacta al equipo de soporte de TimeNest.
+Solo puede haber un Titular por cuenta y la titularidad no se puede transferir desde el panel.
 </Note>
 
 ## Invitar un usuario
@@ -26,77 +26,73 @@ Al invitar a alguien, esa persona recibirá un correo para crear su acceso y que
 
 <Steps>
   <Step title="Abre la sección Equipo">
-    Ve a **Ajustes → Operación → Equipo**.
+    Ve a **Ajustes → Negocio → Equipo**.
   </Step>
   <Step title="Inicia la invitación">
-    Haz clic en **Invitar profesional**.
+    Haz clic en **Añadir al equipo**. Si la persona ya existe como profesional sin acceso, haz clic en **Editar** en su tarjeta.
   </Step>
   <Step title="Completa los datos">
-    Ingresa el correo electrónico de la persona y selecciona el rol que tendrá: Gerente o Profesional.
+    Selecciona el rol en **Rol en el negocio** (**Gerente** o **Profesional**), completa su ficha y, en **Acceso a la app**, elige **Invitar por correo** e ingresa su correo electrónico.
   </Step>
   <Step title="Envía la invitación">
-    Confirma. El usuario recibirá un correo de invitación con un enlace para activar su cuenta.
+    Haz clic en **Añadir profesional** (o **Agregar e invitar** para un gerente). El usuario recibirá un correo de invitación con un enlace para activar su cuenta, válido por 7 días.
   </Step>
   <Step title="Cuenta activa">
-    Una vez que la persona acepte la invitación, su cuenta estará activa y vinculada a tu negocio. Aparecerá en la lista de tu equipo con el estado **Activo**.
+    Una vez que la persona acepte la invitación, su cuenta estará activa y vinculada a tu negocio. Su tarjeta en el Equipo muestra el estado **Activo**. Mientras tanto, aparece en **Invitaciones pendientes**, desde donde puedes **Reenviar** o **Cancelar** la invitación.
   </Step>
 </Steps>
 
 <img src="/images/placeholder.png" alt="Pantalla de invitación de profesional en Ajustes → Equipo" />
 
 <Note>
-Con el **Plan Gratis**, el equipo puede tener un máximo de 2 miembros, incluido el Titular. Para agregar más personas, actualiza al Plan Pro.
+Con el **Plan Gratis**, el equipo puede tener un máximo de 2 fichas de profesional activas, incluida la del Titular si atiende citas. Para agregar más personas, actualiza al Plan Pro.
 </Note>
 
 ## Cambiar el rol de un usuario
 
-Puedes cambiar el rol de cualquier miembro del equipo en cualquier momento.
+El rol se define al dar acceso al panel y después no se puede cambiar desde la ficha: al editarla verás el aviso **El rol se definió al dar acceso; para cambiarlo, elimina el acceso y vuelve a invitar**. Para cambiar el rol de un miembro:
 
-<Steps>
-  <Step title="Abre la sección Equipo">
-    Ve a **Ajustes → Operación → Equipo**.
-  </Step>
-  <Step title="Selecciona al usuario">
-    Encuentra la tarjeta del profesional cuyo rol quieres cambiar y haz clic en **Editar**.
-  </Step>
-  <Step title="Cambia el rol">
-    En el modal de edición, selecciona el nuevo rol y guarda los cambios.
-  </Step>
-</Steps>
+1. Ve a **Ajustes → Negocio → Equipo** y abre su ficha con **Editar**.
+2. Elimina su acceso.
+3. Vuelve a invitarlo con el rol nuevo.
 
-El cambio aplica de inmediato. La próxima vez que el usuario inicie sesión, verá el panel con los permisos del nuevo rol.
+## Permisos por nivel
 
-<img src="/images/placeholder.png" alt="Modal de edición de profesional con selector de rol" />
+Además de los roles, TimeNest te permite ajustar permisos específicos para cada nivel. Estos controles viven en **Ajustes → Negocio → Permisos**, solo el Titular puede editarlos, y aplican a todos los miembros del nivel correspondiente (**Gerente** o **Profesional**), no a personas individuales. Los permisos acotan, nunca amplían: un profesional sigue viendo únicamente sus propias citas.
 
-## Permisos granulares
-
-Además de los roles, TimeNest te permite ajustar permisos específicos para cada nivel. Estos controles viven en **Ajustes → Operación → Permisos** y aplican a todos los miembros del nivel correspondiente (Gerente o Profesional).
-
-Los permisos que puedes activar o desactivar incluyen:
+Selecciona el nivel que quieres configurar y activa o desactiva cada fila. Los permisos disponibles son:
 
 <Accordion title="Secciones del panel">
-  Controla qué secciones del panel puede ver el nivel: Panel principal, Agenda, Citas, Clientes y Mensajes.
+  Controla qué secciones del menú puede ver el nivel: **Panel de inicio**, **Agenda**, **Citas** y **Mensajes a clientes**. Por defecto están activas las tres primeras.
 </Accordion>
 
-<Accordion title="Acciones sobre citas">
-  - **Crear citas**: permite crear nuevas citas, incluyendo para otros profesionales.
-  - **Editar citas**: permite modificar citas existentes.
-  - **Cancelar citas**: permite cancelar citas, incluyendo las de otros compañeros.
+<Accordion title="Citas">
+  - **Crear citas**: permite crear nuevas citas desde el panel.
+  - **Cambiar estado**: permite marcar citas como pendientes, confirmadas o no asistidas.
+  - **Cancelar citas**: permite cancelar citas.
+
+  Los tres vienen activados por defecto.
 </Accordion>
 
 <Accordion title="Clientes">
-  - **Ver clientes**: permite acceder a la sección de Clientes.
-  - **Gestionar clientes**: permite crear, editar y archivar fichas de clientes.
+  - **Clientes**: permite acceder a la sección de Clientes y ver las fichas.
+  - **Crear y editar clientes**: permite registrar y editar fichas de clientes y bloquear sus reservas online.
+
+  Ambos vienen desactivados por defecto.
 </Accordion>
 
-<Accordion title="Ajustes delegados">
-  Puedes otorgar acceso a secciones específicas de Ajustes: Servicios, Horarios, Notificaciones, Plantillas, Equipo y Sucursales. Cada una es independiente.
+<Accordion title="Ajustes">
+  Puedes otorgar acceso a secciones específicas de Ajustes: **Servicios y precios**, **Horarios** (incluye cierres, anticipación de reserva y la sección **Solicitudes**), **Notificaciones** (incluye la política de cancelación y las notificaciones del equipo), **Plantillas de mensaje**, **Equipo** y **Sucursales**. Cada una es independiente y todas vienen desactivadas por defecto.
 </Accordion>
 
-<Accordion title="Autoservicio de horario">
-  Con el permiso **Editar mi horario** activo, el Profesional puede guardar cambios en su propio horario directamente. Si está desactivado, sus modificaciones llegan como solicitud para que tú las apruebes.
+<Accordion title="Autoservicio">
+  Con el permiso **Editar su propio horario** activo, el Profesional puede guardar cambios en su propio horario directamente. Si está desactivado, sus modificaciones llegan como solicitud a la sección **Solicitudes** para que tú las apruebes.
 </Accordion>
+
+Usa **Todo** o **Nada** para activar o desactivar un grupo completo, y **Restaurar valores por defecto** para volver a la configuración inicial. Haz clic en **Guardar permisos** para aplicar los cambios. El lateral derecho te muestra una vista previa del menú que verá ese nivel.
+
+<img src="/images/placeholder.png" alt="Pantalla de permisos por nivel con los grupos Secciones del panel, Citas, Clientes, Ajustes y Autoservicio" />
 
 <Tip>
-Después de guardar cambios en los permisos, el usuario debe cerrar sesión y volver a entrar para que los nuevos permisos sean visibles en su panel.
+Después de guardar cambios en los permisos, el equipo los toma al recargar el panel. No es necesario que cierren sesión.
 </Tip>

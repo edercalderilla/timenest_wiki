@@ -1,29 +1,32 @@
 ---
 title: "Métodos de pago y facturación de tu plan en TimeNest"
 sidebarTitle: "Métodos de Pago"
-description: "Conoce los métodos de pago aceptados en TimeNest, cómo consultar tu historial de cobros y qué hacer si un pago automático no se procesa."
+description: "Conoce cómo se cobra tu plan en TimeNest, cómo consultar tu historial de periodos y recibos, qué hacer si un pago automático no se procesa y cómo activar los mensajes adicionales."
 ---
 
-TimeNest procesa todos los pagos a través de Mercado Pago, uno de los procesadores de pagos más usados en México y América Latina. Desde la sección de Facturación en tu panel puedes consultar tu historial de pagos, actualizar tu método de pago y gestionar la autorenovación de tu suscripción. Esta sección solo está disponible para el Titular de la cuenta.
+TimeNest procesa todos los pagos a través de Mercado Pago, uno de los procesadores de pagos más usados en México y América Latina. Desde **Ajustes → Cuenta → Facturación** puedes consultar tu historial de periodos, descargar recibos, actualizar tu tarjeta y gestionar los mensajes adicionales de WhatsApp. Esta sección solo está disponible para el Titular de la cuenta.
 
 ## Métodos de pago aceptados
 
-Los métodos disponibles dependen de los que Mercado Pago habilita para tu región. En México, los más comunes son:
+Los planes se pagan con tarjeta de crédito o débito a través del formulario de Mercado Pago. La tarjeta queda guardada para las renovaciones automáticas.
 
-- Tarjetas de crédito y débito (Visa, Mastercard, American Express)
-- Transferencia bancaria (SPEI)
-- Otros métodos disponibles en Mercado Pago según tu región
-
-## Consultar el historial de pagos
+## Consultar el historial de periodos y descargar recibos
 
 <Steps>
   <Step title="Ve a Facturación">
     En el menú lateral de tu panel, ve a **Ajustes → Cuenta → Facturación**.
   </Step>
   <Step title="Revisa el historial">
-    Verás una lista de todos los cargos anteriores. Cada fila muestra la fecha, el monto, el tipo de cargo y el estado del pago (aprobado, fallido o pendiente).
+    En **Historial de periodos** verás una fila por cada periodo con el plan, las fechas, el estado (**Pagado** o **Pendiente**) y, si aplica, los mensajes adicionales cobrados y el número de intentos de pago rechazados.
+  </Step>
+  <Step title="Descarga el recibo">
+    Haz clic en **Recibo** en un periodo pagado para descargar el comprobante en PDF. TimeNest también te lo envía por correo después de cada pago.
   </Step>
 </Steps>
+
+<Note>
+El recibo es un comprobante de pago, no una factura fiscal. Si necesitas factura (CFDI), solicítala a [contacto@timenest.app](mailto:contacto@timenest.app).
+</Note>
 
 ## Actualizar el método de pago
 
@@ -32,25 +35,41 @@ Los métodos disponibles dependen de los que Mercado Pago habilita para tu regi�
     En el menú lateral, ve a **Ajustes → Cuenta → Facturación**.
   </Step>
   <Step title="Actualiza tu tarjeta">
-    En la sección de tarjeta guardada, haz clic en **Actualizar método de pago** y sigue el flujo de Mercado Pago para registrar un nuevo método.
+    En la sección **Método de pago**, haz clic en **Actualizar** (o **Agregar tarjeta** si no hay ninguna guardada) e ingresa los datos de la nueva tarjeta. No se hace ningún cargo en ese momento.
   </Step>
 </Steps>
 
+El botón **Quitar** solo está disponible cuando tu plan no se va a renovar. Al quitar la tarjeta, los mensajes adicionales quedan desactivados.
+
 ## ¿Qué pasa si un pago falla?
 
-Si el cobro automático no se puede procesar, TimeNest reintenta el pago en los días siguientes. Durante ese periodo tu cuenta entra en un estado de gracia y el Plan Pro sigue activo.
+Si el cobro automático no se puede procesar, tu suscripción pasa al estado **Pago pendiente** y entra en un periodo de gracia. Durante ese periodo, el plan y todas sus funciones siguen activos, y TimeNest reintenta el cobro a tu tarjeta guardada hasta dos veces más (al día siguiente y dos días después). Recibirás un aviso por correo electrónico en la dirección registrada de tu cuenta.
 
-Si después de varios intentos el pago no se aprueba, la cuenta puede pasar automáticamente al Plan Gratis. Recibirás un aviso por correo electrónico en la dirección registrada de tu cuenta para que puedas actualizar tu método de pago antes de que eso ocurra.
+En el panel verás el aviso **No pudimos cobrar tu renovación. Paga el periodo pendiente para conservar tu plan** con el botón **Pagar ahora**, y en **Facturación** la tarjeta **Periodo pendiente de pago** con la fecha límite.
 
-Para resolver un pago fallido:
+Si al terminar el periodo de gracia el pago sigue sin aprobarse, la cuenta pasa automáticamente al Plan Gratis y recibes un correo de aviso.
+
+Para resolver un pago pendiente:
 1. Ve a **Ajustes → Cuenta → Facturación**.
-2. Actualiza tu método de pago con una tarjeta o cuenta válida.
-3. El sistema reintentará el cobro en el siguiente ciclo.
+2. Haz clic en **Reintentar cobro** para cobrar de nuevo a la tarjeta guardada, o en **Pagar con otra tarjeta** para usar una distinta.
+3. Al aprobarse el pago, el periodo queda marcado como **Pagado** y la suscripción vuelve a la normalidad.
 
 <Tip>
-Mantén actualizada la dirección de correo electrónico de tu cuenta para recibir los avisos de pago. Puedes cambiarla en **Ajustes → Cuenta → Mi cuenta**.
+Mantén actualizada la dirección de correo electrónico de tu cuenta para recibir los avisos de pago y los recibos.
 </Tip>
 
+## Mensajes adicionales de WhatsApp
+
+Cuando agotas la cuota de mensajes de tu ciclo, los envíos se pausan hasta el siguiente ciclo. Si prefieres seguir enviando, activa los mensajes adicionales:
+
+1. Ve a **Ajustes → Cuenta → Facturación**.
+2. Asegúrate de tener una tarjeta guardada en **Método de pago**.
+3. Activa el interruptor **Permitir mensajes adicionales**.
+
+Con esta opción activa, al agotar la cuota TimeNest sigue enviando tus mensajes y cada mensaje extra se cobra al precio por mensaje de tu plan, a tu tarjeta guardada, al cerrar el ciclo, como cargo adicional a tu suscripción. La sección **Facturación** te muestra el precio por mensaje extra de tu plan; si tu plan no cobra los mensajes extra, la sección lo indica.
+
+Con la opción apagada, o si quitas la tarjeta, los envíos se pausan al agotar la cuota y no se genera ningún cobro adicional.
+
 <Note>
-TimeNest no almacena los datos de tu tarjeta. Toda la información de pago se procesa y guarda de forma segura por Mercado Pago, bajo sus estándares de seguridad PCI DSS.
+TimeNest no almacena los datos de tu tarjeta. Toda la información de pago se procesa y guarda de forma segura por Mercado Pago. En tu panel solo se muestran la marca, los últimos cuatro dígitos y la fecha de vencimiento.
 </Note>

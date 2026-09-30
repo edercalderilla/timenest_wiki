@@ -4,12 +4,12 @@ sidebarTitle: "Preguntas Frecuentes"
 description: "Resuelve tus dudas más comunes sobre reservas en línea, mensajes de WhatsApp, planes, facturación y gestión del equipo en TimeNest."
 ---
 
-Aquí encontrarás respuestas rápidas a las preguntas más comunes sobre TimeNest. Si tu duda no está en esta lista, puedes escribirnos a través del chat en [timenest.app](https://timenest.app) o consultar las guías detalladas en la documentación.
+Aquí encontrarás respuestas rápidas a las preguntas más comunes sobre TimeNest. Si tu duda no está en esta lista, puedes escribirnos a [contacto@timenest.app](mailto:contacto@timenest.app) o consultar las guías detalladas en la documentación.
 
 ## Sobre las reservas
 
 <Accordion title="¿Mis clientes necesitan crear una cuenta para reservar?">
-  No. Los clientes reservan como invitados. Solo necesitan ingresar su nombre y número de teléfono. No tienen que instalar nada ni crear una contraseña.
+  No. Los clientes reservan como invitados. Solo necesitan ingresar su nombre y número de teléfono. No tienen que instalar nada ni crear una contraseña. Si activaste la verificación por SMS, un cliente nuevo recibe un código de 6 dígitos la primera vez.
 </Accordion>
 
 <Accordion title="¿Puedo recibir reservas de WhatsApp directamente?">
@@ -17,29 +17,37 @@ Aquí encontrarás respuestas rápidas a las preguntas más comunes sobre TimeNe
 </Accordion>
 
 <Accordion title="¿Puedo deshabilitar las reservas en línea temporalmente?">
-  Sí. Puedes desactivar la página de reservas desde **Ajustes → Operación → Sucursales** sin necesidad de eliminar ninguna configuración. Cuando la reactives, todo queda igual que antes.
+  Sí. Desactiva el interruptor **Reservas online activas** en **Ajustes → Negocio → Perfil del negocio**. Aplica a todo el negocio y no elimina ninguna configuración. Cuando lo reactives, todo queda igual que antes. Para pausar solo una sucursal, desactiva **Sede activa** en **Ajustes → Negocio → Sucursales**.
 </Accordion>
 
 <Accordion title="¿Qué pasa si dos clientes intentan reservar el mismo hueco al mismo tiempo?">
-  TimeNest asigna el hueco al primero que confirma la reserva. El segundo cliente verá que ese horario ya no está disponible y podrá elegir otro.
+  TimeNest asigna el hueco al primero que confirma la reserva. El segundo cliente verá el aviso **Ese horario se acaba de ocupar. Elige otro, por favor** y podrá elegir otro.
+</Accordion>
+
+<Accordion title="¿Puedo evitar que un cliente concreto reserve en línea?">
+  Sí. Abre su ficha en **Clientes** y activa **Bloquear reservas online**. Ese número ya no podrá reservar desde tu página pública, pero tu equipo sí podrá agendarle citas desde el panel.
+</Accordion>
+
+<Accordion title="¿Puedo cambiar la fecha o el profesional de una cita ya registrada?">
+  Por ahora no. Cancela la cita y crea una nueva con los datos correctos. Si tienes activados los avisos, el cliente recibe un WhatsApp por cada acción.
 </Accordion>
 
 ## Sobre WhatsApp
 
 <Accordion title="¿Por qué no llegan los mensajes de WhatsApp a mis clientes?">
-  Las razones más comunes son: el número de teléfono del cliente está incorrecto, el número no está en servicio, o el cliente no tiene WhatsApp instalado. Para ver el motivo específico, ve a la sección **Mensajes** en el panel y revisa el estado de cada mensaje.
+  Las razones más comunes son: el número de teléfono del cliente está incorrecto, el número no está en servicio, el cliente no tiene WhatsApp instalado, el aviso está desactivado en **Ajustes → Operación → Notificaciones** para esa sucursal, o se agotó la cuota de mensajes del ciclo. Para ver el motivo específico, ve a la sección **Mensajes** en el panel y revisa el estado de cada mensaje.
 </Accordion>
 
 <Accordion title="Se agotó mi cuota de mensajes. ¿Qué hago?">
-  Con el **Plan Gratis**, los mensajes se pausan cuando se agota la cuota mensual (50 mensajes). Se reanudan al inicio del siguiente ciclo (mes calendario). Si necesitas continuar enviando mensajes antes de eso, actualiza al **Plan Pro**, que incluye 350 mensajes al mes.
+  Al agotar la cuota del ciclo, los mensajes se pausan y aparecen como **Omitido por límite** en **Mensajes**. Se reanudan al inicio del siguiente ciclo (en el Plan Gratis, ciclos de 30 días desde tu alta; en un plan de pago, tu periodo de facturación). Si necesitas continuar enviando antes de eso, activa **Permitir mensajes adicionales** en **Ajustes → Cuenta → Facturación** (requiere una tarjeta guardada) o cambia a un plan con más mensajes.
 </Accordion>
 
 <Accordion title="¿Puedo enviar mensajes libres a mis clientes desde TimeNest?">
-  No. TimeNest solo envía mensajes automáticos usando plantillas aprobadas por WhatsApp (confirmaciones, recordatorios y notificaciones de cancelación). No es una herramienta de mensajería masiva ni de conversación directa.
+  No. TimeNest solo envía mensajes automáticos usando plantillas aprobadas por WhatsApp (confirmaciones, recordatorios, confirmación de asistencia y notificaciones de cancelación). No es una herramienta de mensajería masiva ni de conversación directa. Si un cliente responde con texto a un mensaje, esa respuesta no llega a tu panel.
 </Accordion>
 
 <Accordion title="¿El número de WhatsApp de mi negocio es visible para los clientes?">
-  No. Los mensajes se envían desde el número de TimeNest, no desde el número de tu negocio. Tus clientes ven los mensajes, pero no tienen forma de responderle directamente a tu número a través de la plataforma.
+  Los mensajes automáticos se envían desde el número de TimeNest, no desde el número de tu negocio. Aparte de eso, si registras un teléfono en tu sucursal, tu página pública muestra los botones **Llamar** y **WhatsApp** para que el cliente te contacte directamente.
 </Accordion>
 
 ## Sobre el plan y la facturación
@@ -49,19 +57,27 @@ Aquí encontrarás respuestas rápidas a las preguntas más comunes sobre TimeNe
 </Accordion>
 
 <Accordion title="¿Puedo cancelar el Plan Pro cuando quiera?">
-  Sí. Puedes cancelar desde **Ajustes → Cuenta → Plan** en cualquier momento. El Plan Pro permanece activo hasta el final del periodo pagado. Al vencer, tu cuenta regresa automáticamente al Plan Gratis.
+  Sí. Puedes cancelar desde **Ajustes → Cuenta → Facturación** con **Cancelar plan** en cualquier momento. El Plan Pro permanece activo hasta el final del periodo pagado. Al vencer, tu cuenta regresa automáticamente al Plan Gratis.
 </Accordion>
 
 <Accordion title="¿TimeNest cobra comisión por cada cita?">
-  No. TimeNest no cobra ninguna comisión por las citas que recibes. Solo pagas la suscripción mensual o anual del plan que elijas.
+  No. TimeNest no cobra ninguna comisión por las citas que recibes. Solo pagas la suscripción mensual o anual del plan que elijas y, si los activas, los mensajes adicionales de WhatsApp.
+</Accordion>
+
+<Accordion title="¿Puedo obtener una factura (CFDI)?">
+  Después de cada pago recibes un recibo en PDF por correo, que también puedes descargar desde **Historial de periodos**. El recibo no es una factura fiscal; solicita tu CFDI a [contacto@timenest.app](mailto:contacto@timenest.app).
 </Accordion>
 
 ## Sobre el equipo
 
 <Accordion title="¿Puede cada profesional ver las citas de sus colegas?">
-  Depende de los permisos configurados. Por defecto, los Profesionales solo pueden ver y gestionar sus propias citas. Si quieres que un Profesional vea las citas de otros, puedes habilitarlo desde **Ajustes → Operación → Permisos**.
+  No. Un usuario con rol **Profesional** solo ve y gestiona sus propias citas; los permisos acotan el acceso, nunca lo amplían. Si necesitas que alguien vea la agenda de todo el equipo, invítalo con el rol **Gerente**.
 </Accordion>
 
 <Accordion title="¿Qué pasa si desactivo a un profesional? ¿Se pierden sus citas?">
-  No. Al desactivar a un profesional, su historial de citas se conserva completo. Sin embargo, sus citas futuras no se reasignan de forma automática. Antes de desactivar su cuenta, reasigna manualmente las citas pendientes a otro profesional desde el panel.
+  No. Al desactivar a un profesional, su historial de citas se conserva completo. Sin embargo, sus citas futuras no se reasignan de forma automática. Antes de desactivar su ficha, cancela las citas pendientes y créalas de nuevo con otro profesional desde el panel.
+</Accordion>
+
+<Accordion title="¿Puedo cambiar el rol de alguien de Profesional a Gerente?">
+  El rol se fija al dar acceso al panel. Para cambiarlo, elimina el acceso de esa persona desde su ficha en **Ajustes → Negocio → Equipo** y vuelve a invitarla con el rol nuevo.
 </Accordion>

@@ -4,12 +4,14 @@ sidebarTitle: "Mensajes al Cliente"
 description: "Conoce los cuatro tipos de mensajes de WhatsApp que TimeNest envía automáticamente a tus clientes en cada etapa del proceso de reserva."
 ---
 
-TimeNest envía mensajes de WhatsApp a tus clientes de forma automática en cada etapa de la cita — tú no tienes que escribir ni enviar nada manualmente. Cada mensaje sigue un formato estándar establecido por WhatsApp y se envía desde el número verificado de TimeNest en nombre de tu negocio.
+TimeNest envía mensajes de WhatsApp a tus clientes de forma automática en cada etapa de la cita. Tú no tienes que escribir ni enviar nada manualmente. Cada mensaje sigue una plantilla aprobada por WhatsApp y se envía desde el número verificado de TimeNest en nombre de tu negocio.
+
+Cada tipo de mensaje se activa o desactiva por sucursal en **Ajustes → Operación → Notificaciones**. Consulta [Recordatorios y confirmaciones](/whatsapp/recordatorios-y-confirmaciones).
 
 ## Tipos de mensajes
 
 <Accordion title="Confirmación de reserva">
-Se envía de inmediato cuando se crea una cita, ya sea desde tu panel o desde la página de reservas del cliente.
+Se envía de inmediato cuando se crea una cita, ya sea desde tu panel o desde la página de reservas del cliente, si el aviso **Al agendar** está activo para el cliente.
 
 El mensaje incluye:
 - Nombre del cliente
@@ -24,7 +26,7 @@ Este es el primer contacto del cliente con la cita. Confirma que la reserva qued
 </Accordion>
 
 <Accordion title="Recordatorio de cita">
-Se envía antes de la cita, con la anticipación que tú configures en Ajustes. Puedes establecer uno o dos recordatorios, por ejemplo 24 horas antes y 2 horas antes.
+Se envía antes de la cita, con la anticipación que tú configures en Ajustes (de 1 minuto a 48 horas antes; por defecto, 24 horas).
 
 El mensaje incluye los mismos datos que la confirmación: fecha, hora, servicio y profesional. Su objetivo es que el cliente tenga frescos los detalles de su cita para reducir inasistencias.
 
@@ -32,20 +34,20 @@ Consulta [Recordatorios y confirmaciones](/whatsapp/recordatorios-y-confirmacion
 </Accordion>
 
 <Accordion title="Confirmación de asistencia">
-Se envía poco antes de la cita y contiene dos botones de respuesta rápida:
+Se envía antes de la cita, con la anticipación que configures, y contiene dos botones de respuesta rápida:
 
-- **Sí asistiré** — confirma la asistencia
-- **No podré asistir** — cancela la cita
+- **Sí asistiré**: la cita pasa a **Confirmada**
+- **No podré asistir**: la cita se cancela y el hueco queda libre en tu agenda. Este comportamiento no es configurable: la respuesta del cliente siempre se refleja en la agenda.
 
-Cuando el cliente toca uno de los botones, el estado de la cita se actualiza de forma automática en tu panel. Si responde "No podré asistir", la cita se cancela y el hueco queda libre en tu agenda.
+Cuando el cliente toca uno de los botones, el estado de la cita se actualiza de forma automática en tu panel.
 
 <Note>
-Si el cliente no responde, puedes configurar qué ocurre: no hacer nada, avisar al profesional o liberar el hueco. Ajusta ese comportamiento en Ajustes → Operación → Notificaciones.
+Lo que sí puedes configurar es qué ocurre si el cliente **no responde** dentro del margen de respuesta: **No hacer nada**, **Avisar al profesional** o **Liberar el hueco**. Ajusta ese comportamiento en **Ajustes → Operación → Notificaciones**, en la tarjeta **Confirmación de asistencia**, bajo **Si el cliente no responde**.
 </Note>
 </Accordion>
 
 <Accordion title="Cancelación de cita">
-Se envía cuando una cita se cancela, ya sea por el negocio desde el panel o por el cliente desde su enlace de cita.
+Se envía cuando una cita se cancela, ya sea por el negocio desde el panel, por el cliente desde su enlace de cita, por el botón **No podré asistir** o por la política de confirmación de asistencia, si el aviso **Cancelación** está activo para el cliente.
 
 El mensaje incluye los detalles de la cita cancelada y un enlace para que el cliente pueda volver a reservar cuando quiera.
 </Accordion>
@@ -55,20 +57,44 @@ Todos los mensajes se envían al número de teléfono móvil que el cliente regi
 </Note>
 
 <Note>
-TimeNest envía únicamente por WhatsApp — no por SMS ni correo electrónico. El teléfono del cliente debe tener WhatsApp instalado para recibir los mensajes.
+TimeNest envía a tus clientes únicamente por WhatsApp, no por SMS ni correo electrónico. El teléfono del cliente debe tener WhatsApp instalado para recibir los mensajes. Los mensajes se envían siempre en español, independientemente del idioma en que el cliente haya usado la página de reservas.
+</Note>
+
+<Note>
+Si el cliente responde con texto libre a un mensaje de TimeNest, esa respuesta no llega a tu panel ni tiene efecto sobre la cita. Solo se procesan los botones **Sí asistiré** y **No podré asistir**.
 </Note>
 
 ## Ver el registro de mensajes
 
-En el menú lateral de tu panel, ve a **Mensajes**. Ahí encuentras el historial de todo lo que TimeNest envió durante el ciclo en curso: confirmaciones, recordatorios y cancelaciones.
+En el menú lateral de tu panel, ve a **Mensajes**. Ahí encuentras la sección **Mensajes enviados** con el historial de todo lo que TimeNest envió por WhatsApp en el mes seleccionado, tanto a clientes como a profesionales. Usa las flechas **Ciclo anterior** y **Ciclo siguiente** para cambiar de mes.
 
-Cada fila del registro muestra:
-- El estado del envío: enviado, entregado, leído o fallido
-- El nombre del cliente
-- El tipo de mensaje
+En la parte superior verás cuatro indicadores: **Enviadas**, **Entregadas**, **Fallidas** y **En cola**.
+
+Cada fila del **Registro de envíos** muestra:
+- El estado del envío: **En cola**, **En envío**, **Enviado**, **Entregado**, **Leído**, **Fallido** u **Omitido por límite**
+- El destinatario, con la etiqueta **CLIENTE** o **PROFESIONAL**
+- El tipo de notificación y, si aplica, el motivo del fallo
+- El canal (siempre WhatsApp)
 - La fecha y hora del envío
-- El motivo del fallo, si aplica
 
-Usa los filtros en la parte superior de la tabla para ver solo los mensajes entregados, los fallidos o los que están en cola.
+Usa los filtros **Todas**, **Entregadas**, **Fallidas**, **Omitidas** y **En cola**, y las pestañas **Todos**, **Clientes** y **Profesionales**, para acotar el registro.
 
 <img src="/images/placeholder.png" alt="Vista de la sección Mensajes con el registro de envíos y los filtros de estado" />
+
+### Reenviar un mensaje
+
+Si un mensaje a un cliente aparece como **Fallido** u **Omitido por límite**, el Titular o un Gerente pueden pulsar **Reenviar** en su fila. Con el filtro **Fallidas** u **Omitidas** activo, el botón **Reenviar todas** reenvía todos los de ese grupo de una vez; antes de hacerlo, TimeNest te muestra cuántos mensajes de tu cuota quedan.
+
+El reenvío no está disponible cuando ya no tiene sentido: por ejemplo, si la cita ya empezó, ya se canceló o el cliente ya respondió.
+
+### Exportar el registro
+
+Haz clic en **Exportar** para descargar el registro del mes en una hoja de cálculo (XLSX) con fecha, hora, destinatario, teléfono, tipo, estado y motivo del fallo.
+
+### Consumo del ciclo
+
+En el lateral derecho, el Titular ve la tarjeta **Consumo del ciclo** con los mensajes usados frente a los incluidos en el plan, el desglose **A clientes** y **A profesionales**, y la fecha en que se reinicia la cuota. Ambos tipos de destinatario cuentan para el límite del plan.
+
+<Note>
+Esta sección es visible para el Titular y para los miembros con el permiso **Mensajes a clientes**. Un Profesional solo ve los avisos de sus propias citas.
+</Note>

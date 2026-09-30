@@ -10,6 +10,10 @@ TimeNest crea un perfil de cliente de forma automática la primera vez que algui
 
 Cuando un cliente reserva una cita a través de tu **página de reservas** pública, TimeNest guarda automáticamente su nombre, número de teléfono y correo electrónico (si lo proporcionó) como un nuevo perfil en la sección **Clientes**. En reservas futuras, el sistema identifica al cliente por su número de teléfono y actualiza su perfil existente en lugar de crear uno duplicado.
 
+<Note>
+  Los perfiles de clientes se llevan por sucursal: un mismo teléfono que reserva en dos sedes distintas tiene una ficha en cada una.
+</Note>
+
 ## Agregar un cliente manualmente
 
 Si necesitas registrar un cliente antes de que él reserve por su cuenta, sigue estos pasos.
@@ -19,44 +23,58 @@ Si necesitas registrar un cliente antes de que él reserve por su cuenta, sigue 
     En el menú lateral izquierdo, haz clic en **Clientes**.
   </Step>
   <Step title="Crea un nuevo perfil">
-    Haz clic en el botón **Nuevo** para abrir el formulario de registro.
+    Haz clic en el botón **Nuevo** para abrir el formulario **Registrar cliente**.
   </Step>
   <Step title="Ingresa los datos del cliente">
     Completa el formulario:
     - **Nombre completo**: obligatorio.
-    - **Teléfono**: obligatorio. Se usa para identificar al cliente y enviarle mensajes por WhatsApp.
-    - **Correo electrónico**: opcional.
+    - **Teléfono**: obligatorio. Elige el país (México o Estados Unidos) y escribe los 10 dígitos sin la clave de país. Se usa para identificar al cliente y enviarle mensajes por WhatsApp.
+    - **Email**: opcional.
     - **Sucursal**: si tienes más de una sede, selecciona a cuál pertenece este cliente.
   </Step>
   <Step title="Crea el perfil">
-    Haz clic en **Crear cliente**. El perfil queda disponible de inmediato.
+    Haz clic en **Crear cliente**. El perfil queda disponible de inmediato. Si ya existe un cliente con ese teléfono en la sucursal, TimeNest te lo indica y no crea un duplicado.
   </Step>
   <Step title="Crea citas para este cliente">
-    Ahora puedes seleccionar a este cliente al registrar una nueva cita desde el panel sin necesidad de volver a ingresar sus datos.
+    Ahora puedes seleccionar a este cliente al registrar una nueva cita desde el panel sin necesidad de volver a ingresar sus datos, o usar **Reservar ahora** directamente desde su ficha.
   </Step>
 </Steps>
 
 <img src="/images/placeholder.png" alt="Formulario de Registrar cliente con campos de nombre completo, teléfono y correo electrónico" />
 
+<Note>
+  Ver la sección **Clientes** requiere el permiso **Clientes**; crear y editar fichas requiere el permiso **Crear y editar clientes**. El Titular siempre tiene ambos; para el Gerente y el Profesional vienen desactivados por defecto y puedes activarlos en **Ajustes → Negocio → Permisos**.
+</Note>
+
 ## Buscar un cliente
 
-En la sección **Clientes**, usa la barra de búsqueda en la parte superior para encontrar a cualquier cliente por su nombre o número de teléfono. Los resultados se filtran en tiempo real mientras escribes.
+En la sección **Clientes**, usa la barra **Buscar cliente…** en la parte superior para encontrar a cualquier cliente por su nombre, número de teléfono o correo. Los resultados se filtran en tiempo real mientras escribes. Puedes además acotar la lista con los segmentos **Todos**, **VIP** y **Nuevos**.
 
 ## Tipos de clientes
 
-TimeNest asigna una etiqueta visual a cada cliente de forma automática según su historial con tu negocio.
+TimeNest clasifica a cada cliente de forma automática según su historial con tu negocio.
 
-<CardGroup cols={3}>
+<CardGroup cols={2}>
   <Card title="Nuevo">
-    El perfil se creó en los últimos 30 días. La etiqueta desaparece una vez que transcurre ese periodo.
-  </Card>
-  <Card title="Recurrente">
-    El cliente tiene tres o más visitas registradas y no alcanza todavía el umbral VIP. Forma parte de tu base de clientes habitual.
+    El perfil se creó en los últimos 30 días. Se muestra con la etiqueta **Nuevo** junto al nombre y aparece en el segmento **Nuevos**. La etiqueta desaparece una vez que transcurre ese periodo.
   </Card>
   <Card title="VIP">
-    Etiqueta asignada de forma automática cuando el cliente acumula diez o más visitas. Identifica a tus clientes más fieles de un vistazo.
+    El cliente acumula diez o más visitas. Aparece en el segmento **VIP** de la lista de clientes y con la etiqueta **VIP** al seleccionarlo en el formulario de nueva cita. Identifica a tus clientes más fieles de un vistazo.
   </Card>
 </CardGroup>
+
+## Editar la ficha de un cliente
+
+Abre la ficha del cliente y haz clic en el ícono de lápiz para abrir **Editar ficha**. Puedes cambiar el **Nombre completo** y el **Email**. El **Teléfono** no es editable, porque es el dato con el que TimeNest identifica al cliente. Guarda con **Guardar cambios**.
+
+## Bloquear las reservas online de un cliente
+
+Si un cliente acumula faltas o hace reservas falsas, puedes impedir que reserve desde tu página pública sin borrar su ficha:
+
+1. Abre la ficha del cliente en **Clientes**.
+2. Activa el interruptor **Bloquear reservas online**.
+
+A partir de ese momento, cuando ese número intente reservar en tu página, ve el aviso **Este número no puede reservar online** con los botones para llamar o escribir por WhatsApp a tu negocio. Tu equipo sí puede seguir agendándole citas desde el panel. El bloqueo aplica a todas tus sucursales y la ficha muestra la etiqueta **Reservas online bloqueadas**. Para revertirlo, desactiva el interruptor.
 
 <Note>
   Los clientes no necesitan crear una cuenta ni recordar una contraseña para reservar. Todo el proceso se hace como invitado usando únicamente su número de teléfono.

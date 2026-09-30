@@ -1,39 +1,58 @@
 ---
 title: "Agrega y gestiona el personal de tu negocio en TimeNest"
 sidebarTitle: "Personal"
-description: "Aprende a invitar profesionales a TimeNest, asignarles servicios, definir sus horarios y controlar qué pueden ver y hacer en el sistema."
+description: "Aprende a dar de alta profesionales en TimeNest, asignarles servicios y sucursales, definir sus horarios e invitarlos al panel con el rol adecuado."
 ---
 
-Tu equipo en TimeNest está formado por los miembros que gestionan citas, atienden clientes y mantienen la operación diaria de tu negocio. Cada persona tiene un rol que define hasta dónde llega su acceso en el sistema. Desde la sección de Equipo puedes invitar a nuevos miembros, asignarles servicios, configurar su horario y ajustar sus permisos.
+Tu equipo en TimeNest está formado por los miembros que gestionan citas, atienden clientes y mantienen la operación diaria de tu negocio. Cada persona tiene un rol que define hasta dónde llega su acceso en el sistema. Desde la sección de Equipo puedes dar de alta a nuevos miembros, asignarles servicios y sucursales, configurar su horario e invitarlos al panel.
 
-## Invitar a un profesional
+## Dar de alta a un profesional
 
 <Steps>
   <Step title="Ve a la sección de Equipo">
-    Ve a **Ajustes → Operación → Equipo**.
+    Ve a **Ajustes → Negocio → Equipo**.
   </Step>
   <Step title="Inicia la incorporación">
     Haz clic en **Añadir al equipo**.
 
     <img src="/images/placeholder.png" alt="Botón Añadir al equipo en la sección Equipo" />
   </Step>
-  <Step title="Ingresa los datos del profesional">
-    Escribe el nombre completo y, si le darás acceso a la app, la dirección de correo electrónico del profesional.
-  </Step>
   <Step title="Selecciona el rol">
-    Elige el rol que tendrá en el sistema: **Profesional** o **Gerente**. Revisa la sección de roles más abajo si tienes dudas sobre cuál asignar.
+    En **Rol en el negocio**, elige **Profesional** (atiende citas: tiene servicios, horario propio y agenda reservable) o **Gerente** (administra el negocio: agenda de todos, clientes, servicios y horarios). Un gerente solo aparece en la página de reservas si activas **También atiende citas**.
   </Step>
-  <Step title="Envía la invitación">
-    Haz clic en **Agregar e invitar**. TimeNest enviará un correo al profesional con un enlace para activar su cuenta.
+  <Step title="Ingresa los datos del profesional">
+    - **Foto de perfil** (según tu plan): JPG o PNG de máximo 2 MB. Se muestra en el equipo, en la agenda y en la página de reservas.
+    - **Nombre** y **Puesto**.
+    - **WhatsApp** (opcional): el número al que TimeNest le enviará los avisos de sus citas si activas ese canal en Notificaciones.
+    - **Servicios que presta**: marca los servicios que ofrece.
+    - **Sucursales**: las sedes donde atiende. Un gerente debe tener al menos una sede que gestiona.
   </Step>
-  <Step title="El profesional acepta la invitación">
-    El profesional debe abrir el correo y hacer clic en el link para activar su cuenta. Hasta que acepte, su estado aparece como pendiente en la lista del Equipo.
+  <Step title="Decide si tendrá acceso al panel">
+    En **Acceso a la app**, elige **Sin acceso** si solo quieres que aparezca en la agenda y en la página de reservas, o **Invitar por correo** e ingresa su correo electrónico para que pueda entrar al panel con su propia cuenta. Un gerente siempre necesita invitación.
+  </Step>
+  <Step title="Guarda">
+    Haz clic en **Añadir profesional** (o **Agregar e invitar** si es un gerente). Si lo invitaste, TimeNest le envía un correo con un enlace para activar su acceso. Hasta que acepte, aparece en **Invitaciones pendientes** con la etiqueta **Invitado**.
   </Step>
 </Steps>
 
 <Note>
-El Plan Gratis permite un máximo de 2 miembros del equipo, incluyendo al Titular. Si necesitas agregar más profesionales, actualiza al Plan Pro.
+El Plan Gratis permite un máximo de 2 fichas de profesional activas, incluida la tuya si atiendes citas. Al alcanzar el límite, el botón **Añadir al equipo** se desactiva con el aviso **Límite de tu plan**. Consulta los límites vigentes en [Planes](/suscripcion/planes).
 </Note>
+
+<Tip>
+Si tú también atiendes citas, haz clic en **Crear mi ficha** en la sección de Equipo. Así apareces como profesional en la página de reservas con tus propios servicios y horario.
+</Tip>
+
+---
+
+## Invitaciones pendientes
+
+Las invitaciones enviadas aparecen en la lista **Invitaciones pendientes** hasta que la persona las acepta. Desde ahí puedes:
+
+- **Reenviar** el correo de invitación. Cada invitación es válida durante 7 días; al reenviarla se genera un enlace nuevo con 7 días más.
+- **Cancelar** la invitación.
+
+Al abrir el enlace, la persona ve la pantalla **Únete a {tu negocio}** con su correo ya cargado. Si no tiene cuenta, elige una contraseña y pulsa **Crear cuenta y aceptar**; si ya tiene cuenta con ese correo, escribe su contraseña y pulsa **Entrar y aceptar invitación**. Debe usar exactamente el correo al que enviaste la invitación.
 
 ---
 
@@ -42,51 +61,57 @@ El Plan Gratis permite un máximo de 2 miembros del equipo, incluyendo al Titula
 Cada miembro del equipo tiene uno de los siguientes tres roles. El rol define qué secciones puede ver y qué acciones puede realizar dentro de TimeNest.
 
 <Accordion title="Titular">
-Tiene control total sobre el sistema. Puede gestionar citas, clientes, servicios, horarios, equipo, sucursales y toda la configuración del negocio. Es el único rol con acceso a facturación, cambio de plan y configuración del ciclo de pago. Solo puede haber un Titular por cuenta.
+Tiene control total sobre el sistema. Puede gestionar citas, clientes, servicios, horarios, equipo, sucursales y toda la configuración del negocio. Es el único rol con acceso al perfil del negocio, a los permisos, a los reportes, a la facturación y al cambio de plan. Solo hay un Titular por cuenta.
 </Accordion>
 
 <Accordion title="Gerente">
-Gestiona la operación diaria: citas, clientes, servicios, horarios y equipo. No tiene acceso a la sección de facturación ni puede cambiar el plan. Es el rol adecuado para un encargado de sucursal o un administrador de confianza.
+Gestiona la operación diaria: citas, clientes, servicios, horarios y equipo, según los permisos del nivel Gerente. Ve las citas de las sucursales que gestiona. No tiene acceso al perfil del negocio, a los reportes ni a la facturación. Es el rol adecuado para un encargado de sucursal o un administrador de confianza.
 </Accordion>
 
 <Accordion title="Profesional">
-Solo puede ver y gestionar sus propias citas y su propia agenda. No tiene acceso a la información de otros profesionales, a la configuración del negocio ni a la facturación. Es el rol estándar para los prestadores de servicio.
+Solo puede ver y gestionar sus propias citas y su propia agenda. No tiene acceso a la información de otros profesionales, a la configuración del negocio ni a la facturación, salvo los permisos adicionales que le otorgues. Es el rol estándar para los prestadores de servicio.
 </Accordion>
+
+<Warning>
+El rol se define al dar acceso al panel y después no se puede cambiar desde la ficha. Para cambiar el rol de alguien, elimina su acceso y vuelve a invitarlo con el rol nuevo.
+</Warning>
 
 ---
 
 ## Asignar servicios a un profesional
 
-Para que un profesional aparezca disponible cuando un cliente selecciona un servicio en la página de reservas, ese servicio debe estar asignado a su perfil.
+Para que un profesional aparezca disponible cuando un cliente selecciona un servicio en la página de reservas, ese servicio debe estar marcado en su ficha.
 
-Ve a **Ajustes → Operación → Equipo**, selecciona al profesional y abre su perfil. En la sección de servicios, marca los que ese profesional ofrece. Guarda los cambios. A partir de ese momento, el profesional aparecerá como opción disponible para esos servicios en la página de reservas.
+Ve a **Ajustes → Negocio → Equipo**, haz clic en **Editar** en la tarjeta del profesional y, en **Servicios que presta**, marca los que ofrece. Haz clic en **Guardar cambios**. A partir de ese momento, el profesional aparecerá como opción disponible para esos servicios en la página de reservas de las sucursales a las que está asignado.
 
-<img src="/images/placeholder.png" alt="Perfil de un profesional con la lista de servicios asignables" />
+<img src="/images/placeholder.png" alt="Ficha de un profesional con la lista de servicios que presta" />
 
 <Tip>
-Agrega una foto y una breve biografía al perfil de cada profesional. Los clientes ven esta información en la página de reservas al momento de elegir con quién quieren agendar su cita.
+Agrega una foto de perfil a cada profesional (disponible según tu plan). Los clientes la ven en la página de reservas al momento de elegir con quién quieren agendar su cita.
 </Tip>
 
 ---
 
-## Permisos personalizados
+## Horarios y ausencias
 
-Además del rol, puedes ajustar permisos específicos para cada profesional. Ve a **Ajustes → Operación → Permisos** para configurar acciones puntuales como: ver el número de teléfono de los clientes, cancelar citas o acceder al historial de un cliente.
-
-Usa esta sección cuando necesites dar a un profesional acceso a una función específica sin cambiar su rol completo.
-
-<img src="/images/placeholder.png" alt="Pantalla de permisos personalizados por profesional" />
+Desde la tarjeta de cada profesional, haz clic en **Ver horarios** para definir si en cada sucursal sigue el horario de la sede o tiene un horario propio, y para registrar sus ausencias. Consulta [Horarios](/configuracion/horarios#horario-individual-de-cada-profesional) y [Bloqueos](/configuracion/bloqueos-y-dias-festivos#registrar-la-ausencia-de-un-profesional).
 
 ---
 
-## Desactivar a un miembro del equipo
+## Permisos por nivel
 
-Si un profesional deja de trabajar en tu negocio, puedes desactivar su cuenta sin eliminarla. Ve a su perfil en **Ajustes → Operación → Equipo** y usa la opción **Desactivar**. Una vez desactivado, el profesional ya no puede iniciar sesión ni aparecer en la página de reservas para nuevas citas.
+Además del rol, puedes ajustar qué secciones y acciones tiene disponibles cada nivel (**Gerente** y **Profesional**). Los permisos se configuran por nivel, no por persona: ve a **Ajustes → Negocio → Permisos**. Consulta [Usuarios y Roles](/cuenta/usuarios-y-roles#permisos-por-nivel) para ver la lista completa.
+
+---
+
+## Desactivar o eliminar a un miembro del equipo
+
+Si un profesional deja de trabajar en tu negocio, abre su ficha con **Editar** en **Ajustes → Negocio → Equipo** y haz clic en **Eliminar profesional**. Si la persona tiene citas registradas, TimeNest no la elimina: te ofrece **Desactivar** la ficha para conservar el historial. Una ficha desactivada ya no aparece en la página de reservas ni en el formulario de nueva cita, y la persona pierde el acceso al panel.
 
 Su historial de citas pasadas se mantiene en el sistema y puedes consultarlo en cualquier momento desde la Agenda o el historial de clientes.
 
-<img src="/images/placeholder.png" alt="Opción para desactivar a un profesional desde su perfil en Equipo" />
+<img src="/images/placeholder.png" alt="Opción para eliminar o desactivar a un profesional desde su ficha en Equipo" />
 
 <Warning>
-Desactivar a un profesional no cancela automáticamente sus citas futuras. Antes de desactivarlo, revisa su agenda y reasigna o cancela las citas pendientes de forma manual.
+Desactivar a un profesional no cancela automáticamente sus citas futuras. Antes de desactivarlo, revisa su agenda y cancela las citas pendientes de forma manual; si el cliente sigue interesado, crea una cita nueva con otro profesional.
 </Warning>

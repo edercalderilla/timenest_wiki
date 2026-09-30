@@ -1,10 +1,10 @@
 ---
 title: "Configura la política de cancelación de tu negocio"
 sidebarTitle: "Política de Cancelación"
-description: "Define hasta cuántas horas antes de la cita tus clientes pueden cancelar, y qué pasa cuando no responden a la confirmación de asistencia."
+description: "Define si tus clientes pueden cancelar desde el enlace de su cita y hasta cuántas horas antes de la cita pueden hacerlo."
 ---
 
-Una política de cancelación clara protege el tiempo de tu equipo y reduce los huecos perdidos por cancelaciones de último momento o por clientes que no responden. En TimeNest configuras el plazo y el comportamiento automático en pocos pasos.
+Una política de cancelación clara protege el tiempo de tu equipo y reduce los huecos perdidos por cancelaciones de último momento. En TimeNest decides si el cliente puede cancelar por su cuenta y con cuánta anticipación, en pocos pasos.
 
 ## Configurar la política
 
@@ -12,30 +12,35 @@ Una política de cancelación clara protege el tiempo de tu equipo y reduce los 
   <Step title="Accede a la configuración">
     Ve a **Ajustes → Operación → Política de cancelación**.
   </Step>
-  <Step title="Define el plazo de cancelación">
-    Ingresa cuántas horas antes de la cita un cliente puede cancelar por su cuenta, por ejemplo: **2 horas**, **24 horas** o **48 horas**. Pasado ese plazo, el enlace de cancelación en el WhatsApp del cliente dejará de funcionar.
+  <Step title="Decide si el cliente puede cancelar por su cuenta">
+    Activa o desactiva **Permitir cancelar desde el enlace de reserva**. Con la opción activa, el cliente cancela sin llamar, desde el enlace que recibe en el mensaje de confirmación. Con la opción apagada, el enlace de la cita no muestra el botón de cancelar y el cliente tiene que contactar directamente con el negocio.
   </Step>
-  <Step title="Define qué pasa cuando el cliente no responde">
-    Elige la acción que TimeNest debe ejecutar cuando se envía el mensaje de confirmación de asistencia y el cliente no contesta:
-
-    - **Notificar**: la cita permanece reservada con estado **Sin respuesta** y recibes un aviso en el panel. El hueco no se libera.
-    - **Liberar hueco**: la cita se cancela de forma automática al vencer el tiempo de espera y el hueco queda disponible para nuevas reservas.
+  <Step title="Define el plazo de cancelación">
+    En **Cancelación hasta**, ingresa con cuánta anticipación puede cancelar el cliente, por ejemplo **2 horas**, **24 horas** o **48 horas** antes de la cita. Pasado ese plazo, el enlace deja de permitir la cancelación. La vista previa te muestra el texto que verá el cliente.
   </Step>
   <Step title="Guarda los cambios">
-    Haz clic en **Guardar**. La política entra en vigor de inmediato para todas las citas nuevas.
+    Haz clic en **Guardar cambios**. La política entra en vigor de inmediato para todas las sucursales.
   </Step>
 </Steps>
 
 <img src="/images/placeholder.png" alt="Pantalla de Ajustes con la sección Política de cancelación y sus opciones de configuración" />
 
 <Note>
-  La política de cancelación aplica únicamente a las cancelaciones que realizan los clientes desde su enlace personal. El Titular y el Gerente siempre pueden cancelar cualquier cita desde el panel, sin importar el plazo configurado.
+  La política de cancelación aplica únicamente a las cancelaciones que realizan los clientes desde su enlace personal. El Titular y el equipo siempre pueden cancelar cualquier cita desde el panel, sin importar el plazo configurado.
+</Note>
+
+<Note>
+  Esta sección es visible para el Titular y para los miembros con el permiso **Notificaciones**.
 </Note>
 
 <Tip>
   Configura un plazo de **24 horas** para lograr un buen equilibrio: reduces las cancelaciones de último momento y, al mismo tiempo, le das suficiente flexibilidad a tus clientes para reorganizarse sin penalización.
 </Tip>
 
+## Lo que ve el cliente
+
+En el enlace de su cita, el cliente ve el aviso **Puedes cancelar sin costo hasta el {fecha} a las {hora}** y el botón **Cancelar la cita**. Si el plazo ya venció, ve **Ya no se puede cancelar online. Contacta directamente con el negocio**. Si desactivaste la cancelación, ve **Este negocio no permite cancelar desde el enlace**.
+
 <Info>
-  **Cómo funciona la confirmación de asistencia:** unas horas antes de la cita, TimeNest envía automáticamente un WhatsApp al cliente con dos botones: **Sí asistiré** y **No podré asistir**. Si el cliente toca "Sí asistiré", la cita cambia a estado **Confirmada**. Si toca "No podré asistir", la cita se cancela de forma automática y el hueco queda libre. Si no responde nada, se aplica la regla que configuraste en esta sección (Notificar o Liberar hueco).
+  **Qué pasa cuando el cliente no responde a la confirmación de asistencia:** eso no forma parte de la política de cancelación. Se configura en **Ajustes → Operación → Notificaciones**, en la tarjeta **Confirmación de asistencia**, con la opción **Si el cliente no responde** (**No hacer nada**, **Avisar al profesional** o **Liberar el hueco**). Consulta [Recordatorios y confirmaciones](/whatsapp/recordatorios-y-confirmaciones).
 </Info>

@@ -40,7 +40,8 @@
           "configuracion/servicios",
           "configuracion/horarios",
           "configuracion/bloqueos-y-dias-festivos",
-          "configuracion/personal"
+          "configuracion/personal",
+          "configuracion/integraciones"
         ]
       },
       {
@@ -65,6 +66,12 @@
           "whatsapp/mensajes-al-cliente",
           "whatsapp/recordatorios-y-confirmaciones",
           "whatsapp/personalizacion"
+        ]
+      },
+      {
+        "group": "Reportes",
+        "pages": [
+          "reportes"
         ]
       },
       {

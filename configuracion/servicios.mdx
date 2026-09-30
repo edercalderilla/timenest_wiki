@@ -1,7 +1,7 @@
 ---
 title: "Agrega y configura los servicios de tu negocio en TimeNest"
 sidebarTitle: "Servicios"
-description: "Aprende a crear servicios en TimeNest, establecer su duración y precio, y controlar qué profesionales los ofrecen en tu página de reservas."
+description: "Aprende a crear servicios en TimeNest, establecer su duración y precio, y controlar en qué sucursales y con qué profesionales se ofrecen."
 ---
 
 Los servicios son la base de tu página de reservas: cada cita que agenda un cliente está vinculada a un servicio específico. Configurarlos correctamente garantiza que tus clientes vean opciones claras, que los huecos disponibles reflejen la duración real de cada servicio y que cada profesional aparezca asociado solo a los servicios que ofrece.
@@ -13,27 +13,30 @@ Los servicios son la base de tu página de reservas: cada cita que agenda un cli
     Ve a **Ajustes → Negocio → Servicios y precios**.
   </Step>
   <Step title="Inicia la creación">
-    Haz clic en **Agregar servicio**.
+    Haz clic en **Nuevo servicio** en la parte superior de la página.
 
-    <img src="/images/placeholder.png" alt="Botón Agregar servicio en la sección Servicios y precios" />
+    <img src="/images/placeholder.png" alt="Botón Nuevo servicio en la sección Servicios y precios" />
   </Step>
   <Step title="Escribe el nombre del servicio">
-    Ingresa un nombre claro que tus clientes reconozcan, por ejemplo: "Corte de cabello".
+    Ingresa un nombre claro que tus clientes reconozcan, por ejemplo: "Corte de cabello". Mínimo 2 caracteres.
   </Step>
   <Step title="Establece la duración">
-    Define la duración en minutos (por ejemplo: 30, 45 o 60). Este valor determina cuánto tiempo se bloquea en el calendario del profesional por cada cita.
+    Define la **Duración (min)** en minutos (por ejemplo: 30, 45 o 60). Este valor determina cuánto tiempo se bloquea en el calendario del profesional por cada cita.
   </Step>
   <Step title="Define el precio">
-    Ingresa el precio del servicio. 
+    Ingresa el **Precio** del servicio en la moneda de tu negocio.
   </Step>
   <Step title="Agrega una descripción opcional">
-    Escribe una descripción breve que verán tus clientes en la página de reservas. Úsala para aclarar qué incluye el servicio.
+    Escribe una **Descripción (opcional)** breve para aclarar qué incluye el servicio.
   </Step>
-  <Step title="Selecciona los profesionales que ofrecen este servicio">
-    Marca los profesionales habilitados para realizar este servicio. Solo ellos aparecerán disponibles cuando un cliente seleccione esa opción.
+  <Step title="Agrega una imagen (opcional, según tu plan)">
+    Con **Agregar imagen** puedes subir una imagen cuadrada en PNG, JPG o WebP de máximo 5 MB que se mostrará en tu página de reservas. Si tu plan no incluye imágenes de servicios, verás el aviso **Solo disponible en el plan Pro**.
+  </Step>
+  <Step title="Decide si se puede reservar en línea">
+    Deja activado el interruptor **Reservable en línea** para que el servicio aparezca en tu página de reservas. Si lo desactivas, solo tu equipo podrá agendarlo desde el panel.
   </Step>
   <Step title="Guarda el servicio">
-    Haz clic en **Guardar**. El servicio aparece de inmediato en tu página de reservas.
+    Haz clic en **Agregar servicio**. El servicio queda disponible de inmediato en todas tus sucursales.
   </Step>
 </Steps>
 
@@ -47,18 +50,33 @@ Si tu negocio cobra en el local y no requiere pago anticipado, establece el prec
 
 ---
 
-## Editar o desactivar un servicio
+## Asignar el servicio a tus profesionales
 
-Para modificar un servicio existente, ve a **Ajustes → Negocio → Servicios y precios**, localiza el servicio y haz clic en el ícono de edición.
-
-Si ya no ofreces un servicio, puedes desactivarlo en lugar de eliminarlo. Un servicio inactivo deja de aparecer en tu página de reservas, por lo que los clientes no pueden seleccionarlo para nuevas citas. Sin embargo, las citas ya registradas con ese servicio se mantienen en el sistema y puedes consultarlas en tu Agenda sin ningún problema.
-
-<img src="/images/placeholder.png" alt="Opciones de edición y desactivación de un servicio" />
+Para que un profesional aparezca disponible cuando un cliente seleccione un servicio, ese servicio debe estar marcado en su ficha. Ve a **Ajustes → Negocio → Equipo**, haz clic en **Editar** en la tarjeta del profesional y marca el servicio en la lista **Servicios que presta**. Consulta [Personal](/configuracion/personal#asignar-servicios-a-un-profesional).
 
 ---
 
-## Orden de los servicios
+## Precios y duración por sucursal
 
-El orden en que aparecen los servicios en tu página de reservas es el mismo que ves en la lista de **Servicios y precios**. Puedes reorganizarlos arrastrando y soltando cada servicio a la posición que prefieras. Coloca primero los servicios que más solicitan tus clientes para facilitar la selección.
+El catálogo de servicios es compartido por todas tus sucursales, pero cada sede decide qué servicios ofrece y puede tener su propio precio o duración.
 
-<img src="/images/placeholder.png" alt="Vista de la lista de servicios con opción de reordenar arrastrando" />
+1. Ve a **Ajustes → Negocio → Sucursales** y haz clic en **Configurar sede** en la sucursal que quieres ajustar.
+2. En **Servicios habilitados**, usa el interruptor de cada servicio para activarlo o desactivarlo en esa sede.
+3. Haz clic en el ícono de lápiz de un servicio para definir un precio o duración propios. Mientras no lo hagas, el servicio muestra **Hereda catálogo**.
+
+Los cambios se guardan de inmediato. En la lista de **Servicios y precios**, la columna **Sedes** muestra un punto ámbar en las sucursales que tienen un precio o duración distintos del catálogo.
+
+---
+
+## Editar, desactivar o eliminar un servicio
+
+Para modificar un servicio existente, ve a **Ajustes → Negocio → Servicios y precios** y haz clic en el servicio en la tabla. Se abre el mismo formulario, que guardas con **Guardar cambios**, con dos opciones adicionales:
+
+- **Servicio activo**: desactívalo si ya no lo ofreces. Un servicio inactivo deja de aparecer en tu página de reservas y en el formulario de nueva cita, pero las citas ya registradas con ese servicio se conservan y puedes consultarlas en tu Agenda.
+- **Eliminar servicio**: borra el servicio de forma definitiva, previa confirmación. Si el servicio tiene citas registradas, TimeNest no permite eliminarlo y te ofrece **Desactivar** en su lugar.
+
+<img src="/images/placeholder.png" alt="Opciones de edición y desactivación de un servicio" />
+
+<Note>
+Los servicios aparecen en tu página de reservas en el mismo orden que en la lista de **Servicios y precios**. Por ahora no es posible reordenarlos manualmente.
+</Note>

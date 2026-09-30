@@ -9,42 +9,39 @@ Cada cita en TimeNest tiene un estado que refleja en qué punto del ciclo de vid
 ## Estados de una cita
 
 <Accordion title="Pendiente">
-  La cita fue registrada —ya sea desde la página de reservas o manualmente desde el panel— pero el cliente aún no ha confirmado su asistencia. TimeNest enviará el mensaje de confirmación automáticamente según el tiempo configurado.
+  La cita fue registrada, ya sea desde la página de reservas o manualmente desde el panel, y el hueco ya está ocupado, pero nadie ha confirmado todavía la asistencia. Todas las citas nacen en este estado. También se muestra como **Pendiente** una cita a la que ya se envió la confirmación de asistencia y el cliente aún no responde, o cuyo plazo de respuesta venció sin contestación.
 
-  **Qué hacer:** ninguna acción es urgente. Espera a que llegue el momento del envío de confirmación o comunícate con el cliente si lo consideras necesario.
+  **Qué hacer:** ninguna acción es urgente. Puedes confirmarla tú mismo desde el menú de estado o esperar la respuesta del cliente al mensaje de confirmación de asistencia.
 </Accordion>
 
 <Accordion title="Confirmada">
-  El cliente respondió **"Sí asistiré"** al mensaje de confirmación enviado por WhatsApp. La asistencia está asegurada.
+  Tú confirmaste la cita desde el panel, o el cliente respondió **Sí asistiré** al mensaje de confirmación enviado por WhatsApp. La asistencia está asegurada.
 
   **Qué hacer:** ninguna. La cita está en orden y el equipo puede prepararse con confianza.
 </Accordion>
 
 <Accordion title="Completada">
-  El horario de la cita ya pasó y la cita no fue cancelada. TimeNest la marca como **Completada** de forma automática. Una vez en este estado, el estado de la cita ya no se puede modificar.
+  El horario de la cita ya pasó y la cita no fue cancelada ni marcada como falta. TimeNest la muestra como **Completada** de forma automática. Una vez en este estado, el estado de la cita ya no se puede modificar, salvo para marcarla como **No asistió**.
 
   **Qué hacer:** ninguna. La cita quedó registrada en el historial del cliente.
 </Accordion>
 
 <Accordion title="Cancelada">
-  La cita fue cancelada por el negocio o por el cliente desde su enlace personal. El hueco queda libre de inmediato y puede volver a reservarse.
+  La cita fue cancelada por el negocio, por el cliente desde su enlace personal, o automáticamente por la política de confirmación de asistencia. El hueco queda libre de inmediato y puede volver a reservarse.
 
-  **Qué hacer:** ninguna. Si la cancelación fue inesperada, puedes contactar al cliente para reagendar.
+  **Qué hacer:** ninguna. Si la cancelación fue inesperada, puedes contactar al cliente para reagendar. Mientras el hueco siga libre, puedes reactivar la cita cambiándola a **Pendiente** o **Confirmada**.
 </Accordion>
 
 <Accordion title="No asistirá">
-  El cliente respondió **"No podré asistir"** al mensaje de confirmación enviado por WhatsApp. La cita se cancela de forma automática y el hueco queda libre de inmediato.
+  El cliente respondió **No podré asistir** al mensaje de confirmación enviado por WhatsApp. La cita se cancela de forma automática y el hueco queda libre de inmediato. Se muestra con esta etiqueta para que distingas un hueco perdido de una cita atendida.
 
   **Qué hacer:** ninguna. Si quieres, puedes contactar al cliente para reagendar en otra fecha.
 </Accordion>
 
-<Accordion title="Sin respuesta">
-  TimeNest envió el mensaje de confirmación de asistencia, pero el cliente no respondió dentro del tiempo de espera configurado. Lo que suceda a continuación depende de tu **política de cancelación**:
+<Accordion title="No asistió">
+  El cliente no se presentó y tú lo marcaste como falta desde el panel. Este estado suma una falta a la ficha del cliente y **no se puede revertir**: una vez registrada, el estado de la cita queda congelado.
 
-  - Si elegiste **Notificar**: la cita permanece reservada y recibes un aviso en el panel.
-  - Si elegiste **Liberar hueco**: la cita se cancela automáticamente y el hueco queda disponible.
-
-  **Qué hacer:** revisa los avisos en tu panel y decide si contactas al cliente directamente o dejas que la política actúe.
+  **Qué hacer:** revisa la ficha del cliente. Ahí verás su porcentaje de asistencia, el número de faltas y la fecha de la última. Si las faltas se repiten, puedes bloquearle las reservas online desde su ficha.
 </Accordion>
 
 ## Cambiar el estado manualmente
@@ -53,20 +50,30 @@ En ocasiones necesitarás actualizar el estado de una cita sin esperar a que el 
 
 <Steps>
   <Step title="Abre la cita">
-    Localiza la cita en la **Agenda** o en la sección **Citas** y haz clic sobre ella para ver el detalle.
-  </Step>
-  <Step title="Abre el menú de estado">
-    Haz clic en el campo de **Estado** dentro del panel de detalles. Se desplegará un menú con los estados disponibles.
+    Localiza la cita en la **Agenda** y haz clic sobre ella, o en la sección **Citas** haz clic en su etiqueta de estado. Se despliega el menú **Estado de la cita**.
   </Step>
   <Step title="Selecciona el nuevo estado">
-    Elige el estado que corresponda. El cambio se guarda de inmediato y queda registrado en el historial de la cita.
+    Elige **Pendiente**, **Confirmada**, **No asistió** o **Cancelada**. Cancelar y marcar una falta piden confirmación antes de aplicarse. El cambio se guarda de inmediato.
   </Step>
 </Steps>
 
+<img src="/images/placeholder.png" alt="Menú Estado de la cita en la Agenda con las opciones disponibles" />
+
+Ten en cuenta estas reglas:
+
+- **Pendiente** y **Confirmada** se pueden alternar hasta que termine el horario de la cita.
+- **No asistió** solo está disponible una vez que la cita ya empezó, y solo para citas pendientes o confirmadas. Es irreversible.
+- Una vez que la cita terminó, ya no se puede confirmar ni cancelar: verás el aviso **Esta cita ya se completó: su estado ya no se puede cambiar**.
+- Al reactivar una cita cancelada, TimeNest verifica que el hueco siga libre. Si otra cita lo ocupó, verás el aviso **Ese horario ya está ocupado por otra cita**.
+
 <Note>
-  Solo el **Titular** y el **Gerente** pueden cambiar el estado de cualquier cita. El **Profesional** únicamente puede actualizar el estado de las citas asignadas a él mismo.
+  Cambiar a **Pendiente**, **Confirmada** o **No asistió** requiere el permiso **Cambiar estado**; cancelar requiere el permiso **Cancelar citas**. El Titular siempre puede hacerlo; para el Gerente y el Profesional, ambos permisos vienen activados por defecto y puedes ajustarlos en **Ajustes → Negocio → Permisos**. El Profesional únicamente ve y modifica las citas asignadas a él mismo.
 </Note>
+
+## Ver la respuesta del cliente
+
+En el detalle de una cita (opción **Ver detalles** del menú de estado) encontrarás la línea **Confirmación**, que muestra si la cita está **Esperando respuesta del cliente**, si **El cliente confirmó que asistirá**, si **El cliente avisó que no podrá asistir** o si quedó **Sin respuesta del cliente**. Mientras el plazo está abierto, también verás hasta qué hora puede responder.
 
 ## Filtrar citas por estado
 
-En la sección **Citas** (vista de tabla) encontrarás un filtro de **Estado** en la barra superior. Úsalo para ver rápidamente todas las citas **Pendientes**, **Canceladas**, **Sin respuesta** u otro estado que necesites revisar. Esto es especialmente útil para hacer seguimiento al inicio o al cierre del día.
+En la sección **Citas** (vista de tabla), haz clic en **Filtros** y usa el filtro **Estado** para ver rápidamente todas las citas **Pendientes**, **Canceladas**, **No asistió** u otro estado que necesites revisar. Esto es especialmente útil para hacer seguimiento al inicio o al cierre del día.
