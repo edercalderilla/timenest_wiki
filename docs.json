@@ -56,6 +56,7 @@
           "citas/crear-y-cancelar",
           "citas/politica-de-cancelacion",
           "citas/anticipos-con-mercado-pago",
+          "citas/devoluciones",
           "citas/vista-de-agenda",
           "citas/estados"
         ]
