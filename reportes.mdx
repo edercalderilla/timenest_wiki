@@ -18,7 +18,7 @@ En el menú lateral izquierdo, haz clic en **Reportes**. La sección se abre en 
 - Filtra por **Sucursal**, **Profesional** y **Servicio**. Si tienes servicios en más de una moneda, aparece también el filtro **Moneda**, porque los importes no se suman entre monedas.
 
 <Note>
-  Los reportes hablan de **valor agendado**: la suma de los precios de las citas no canceladas del periodo. No es un registro de ingresos cobrados.
+  Los reportes hablan de **valor agendado**: la suma de los precios de las citas no canceladas del periodo. No es un registro de ingresos cobrados; lo que sí registra TimeNest son los anticipos de Mercado Pago, en la pestaña **Cobros**.
 </Note>
 
 ## Pestañas disponibles
@@ -43,6 +43,15 @@ En el menú lateral izquierdo, haz clic en **Reportes**. La sección se abre en 
   </Tab>
   <Tab title="Cancelaciones">
     Indicadores de citas canceladas, tasa de cancelación, valor cancelado, faltas, asistencia, clientes que respondieron **No podré asistir** y citas sin respuesta. Incluye el **Embudo de confirmación** (a cuántos clientes se les pidió confirmar, cuántos confirmaron, declinaron o no respondieron), y las gráficas **Dónde se cancela** (por sucursal y servicio) y **Cuándo se cancela** (por hora del día).
+  </Tab>
+  <Tab title="Cobros">
+    Resume los anticipos que cobras con Mercado Pago al reservar:
+
+    - **Anticipos cobrados**: lo que entró a tu cuenta por anticipos de las citas del periodo, comparado con el periodo anterior.
+    - **Cobros en local**: una estimación de lo que se cobra en tu negocio por las citas atendidas (precio menos el anticipo que conservas). TimeNest no registra los pagos en el local.
+    - **Devueltos**: lo que devolviste a tus clientes, tanto lo registrado en [Devoluciones](/citas/devoluciones) como lo que devolviste desde Mercado Pago.
+
+    La tarjeta **Estado de los anticipos** reparte las citas con anticipo en **Pagado**, **Pendiente**, **Expirado** y **Devuelto**, y **Movimientos recientes** lista las últimas citas con anticipo del periodo con su estado. Si ninguna cita del periodo pidió anticipo, verás **Sin anticipos en el periodo** con un acceso a **Pagos y depósitos**.
   </Tab>
 </Tabs>
 
