@@ -8,6 +8,12 @@ Cada cita en TimeNest tiene un estado que refleja en qué punto del ciclo de vid
 
 ## Estados de una cita
 
+<Accordion title="Esperando pago">
+  La cita se reservó desde la página pública y el servicio pide un anticipo que el cliente todavía no paga. El hueco ya está apartado durante los minutos que configuraste, pero la cita no recibe recordatorios ni cuenta en los reportes. Si el cliente no paga a tiempo, TimeNest la cancela y libera el hueco automáticamente. Un pago en efectivo puede mantenerla en este estado hasta que se acredite.
+
+  **Qué hacer:** normalmente ninguna. Si el cliente te pagó en el local o acordaron otra cosa, puedes pasarla a **Pendiente** o **Confirmada**: queda registrada sin cobrar el anticipo. Consulta [Anticipos con Mercado Pago](/citas/anticipos-con-mercado-pago).
+</Accordion>
+
 <Accordion title="Pendiente">
   La cita fue registrada, ya sea desde la página de reservas o manualmente desde el panel, y el hueco ya está ocupado, pero nadie ha confirmado todavía la asistencia. Todas las citas nacen en este estado. También se muestra como **Pendiente** una cita a la que ya se envió la confirmación de asistencia y el cliente aún no responde, o cuyo plazo de respuesta venció sin contestación.
 
@@ -61,7 +67,7 @@ En ocasiones necesitarás actualizar el estado de una cita sin esperar a que el 
 
 Ten en cuenta estas reglas:
 
-- **Pendiente** y **Confirmada** se pueden alternar hasta que termine el horario de la cita.
+- **Pendiente** y **Confirmada** se pueden alternar hasta que termine el horario de la cita. Pasar una cita **Esperando pago** a cualquiera de los dos la confirma sin cobrar el anticipo.
 - **No asistió** solo está disponible una vez que la cita ya empezó, y solo para citas pendientes o confirmadas. Es irreversible.
 - Una vez que la cita terminó, ya no se puede confirmar ni cancelar: verás el aviso **Esta cita ya se completó: su estado ya no se puede cambiar**.
 - Al reactivar una cita cancelada, TimeNest verifica que el hueco siga libre. Si otra cita lo ocupó, verás el aviso **Ese horario ya está ocupado por otra cita**.
@@ -72,7 +78,7 @@ Ten en cuenta estas reglas:
 
 ## Ver la respuesta del cliente
 
-En el detalle de una cita (opción **Ver detalles** del menú de estado) encontrarás la línea **Confirmación**, que muestra si la cita está **Esperando respuesta del cliente**, si **El cliente confirmó que asistirá**, si **El cliente avisó que no podrá asistir** o si quedó **Sin respuesta del cliente**. Mientras el plazo está abierto, también verás hasta qué hora puede responder.
+En el detalle de una cita (opción **Ver detalles** del menú de estado) encontrarás la línea **Anticipo** cuando el servicio lo pide (lo pagado y lo que resta en el local) y la línea **Confirmación**, que muestra si la cita está **Esperando respuesta del cliente**, si **El cliente confirmó que asistirá**, si **El cliente avisó que no podrá asistir** o si quedó **Sin respuesta del cliente**. Mientras el plazo está abierto, también verás hasta qué hora puede responder.
 
 ## Filtrar citas por estado
 
