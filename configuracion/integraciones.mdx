@@ -1,12 +1,28 @@
 ---
-title: "Sincroniza tus citas de TimeNest con Google Calendar"
+title: "Conecta Mercado Pago y Google Calendar con TimeNest"
 sidebarTitle: "Integraciones"
-description: "Aprende a conectar tu cuenta de Google Calendar con TimeNest para que tus citas aparezcan automáticamente en tu calendario personal."
+description: "Aprende a conectar Mercado Pago para cobrar anticipos y Google Calendar para que tus citas aparezcan automáticamente en tu calendario personal."
 ---
+
+En **Ajustes → Operación → Integraciones** ves todas las conexiones de TimeNest con otras herramientas, agrupadas en **Cobros** (Mercado Pago) y **Calendario** (Google Calendar). El encabezado indica cuántas tienes conectadas, por ejemplo **1 de 2 conectadas**.
+
+## Mercado Pago
+
+La tarjeta de **Mercado Pago** solo la ve el Titular, porque la cuenta es del negocio. Es el único lugar donde se conecta la cuenta. Desde ahí puedes:
+
+- **Conectar Mercado Pago**: te lleva a Mercado Pago para autorizar a TimeNest. Al terminar regresas a **Integraciones**, donde se completa la conexión.
+- **Configurar anticipos**: abre **Pagos y anticipos**, donde defines la regla de cobro y las excepciones por servicio.
+- **Desconectar**: las reservas nuevas se confirman sin anticipo. Si hay anticipos en curso, espera a que se acrediten o venzan antes de desconectar.
+
+Si la tarjeta muestra **RECONEXIÓN NECESARIA**, Mercado Pago revocó el acceso o la autorización expiró: haz clic en **Reconectar**. Mientras tanto, las reservas nuevas se confirman sin anticipo.
+
+Consulta todos los detalles en [Anticipos con Mercado Pago](/citas/anticipos-con-mercado-pago).
+
+## Google Calendar
 
 TimeNest puede agregar tus citas automáticamente a tu Google Calendar: se crean al agendar y se quitan al cancelar. La conexión es personal: cada miembro del equipo conecta su propia cuenta de Google desde su panel. Esta función depende del plan de tu negocio.
 
-## Conectar Google Calendar
+### Conectar Google Calendar
 
 <Steps>
   <Step title="Ve a Integraciones">
@@ -23,30 +39,26 @@ TimeNest puede agregar tus citas automáticamente a tu Google Calendar: se crean
     Los Profesionales sincronizan únicamente sus propias citas.
   </Step>
   <Step title="Listo">
-    La sección muestra **Conectado como** tu correo y la fecha de la última sincronización. Las citas próximas se agregan a tu calendario en los minutos siguientes.
+    La tarjeta muestra la etiqueta **CONECTADA**, tu correo y la fecha de la última sincronización. Las citas próximas se agregan a tu calendario en los minutos siguientes.
   </Step>
 </Steps>
 
-<img src="/images/placeholder.png" alt="Sección Integraciones con Google Calendar conectado y el selector de qué citas sincronizar" />
+<img src="/images/placeholder.png" alt="Sección Integraciones con Mercado Pago y Google Calendar conectados" />
 
-<Info>
-  La conexión con **Mercado Pago** para cobrar anticipos no está en Integraciones: la gestiona el Titular en **Ajustes → Operación → Pagos y depósitos**. Consulta [Anticipos con Mercado Pago](/citas/anticipos-con-mercado-pago).
-</Info>
-
-## Cómo funciona la sincronización
+### Cómo funciona la sincronización
 
 - La sincronización es en un solo sentido: de TimeNest hacia Google Calendar. Los cambios que hagas en Google no afectan a TimeNest.
 - Se sincronizan las citas activas (pendientes o confirmadas) de los próximos 60 días.
 - Cuando una cita se cancela, TimeNest elimina el evento de tu calendario.
 
 <Note>
-Si tu plan no incluye la sincronización, la sección muestra el aviso correspondiente y el botón **Ver planes** (solo para el Titular). Si bajas a un plan sin esta función, los eventos ya creados se conservan en tu calendario, pero las citas nuevas dejan de agregarse hasta que actualices el plan.
+Si tu plan no incluye la sincronización, la tarjeta muestra el aviso correspondiente y el botón **Ver planes** (solo para el Titular). Si bajas a un plan sin esta función, los eventos ya creados se conservan en tu calendario, pero las citas nuevas dejan de agregarse hasta que actualices el plan.
 </Note>
 
-## Desconectar Google Calendar
+### Desconectar Google Calendar
 
 Haz clic en **Desconectar** y confirma con **Sí, desconectar**. TimeNest quita de tu calendario las citas futuras que agregó y revoca el acceso. Las citas pasadas se quedan en tu calendario.
 
 <Warning>
-Si Google deja de aceptar el acceso (porque lo retiraste desde tu cuenta de Google o caducó), la sección muestra la etiqueta **Requiere atención**. Haz clic en **Volver a conectar** para seguir sincronizando.
+Si Google deja de aceptar el acceso (porque lo retiraste desde tu cuenta de Google o caducó), la tarjeta muestra la etiqueta **REQUIERE ATENCIÓN**. Haz clic en **Volver a conectar** para seguir sincronizando.
 </Warning>
