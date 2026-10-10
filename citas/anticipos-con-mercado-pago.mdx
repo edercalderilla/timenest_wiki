@@ -4,7 +4,7 @@ sidebarTitle: "Anticipos con Mercado Pago"
 description: "Conecta la cuenta de Mercado Pago de tu negocio y pide a tus clientes un anticipo parcial o el pago total al reservar en línea. El dinero llega directo a tu cuenta."
 ---
 
-Un anticipo reduce las citas que nunca llegan y te asegura parte del ingreso desde el momento en que el cliente reserva. En TimeNest conectas **tu propia cuenta de Mercado Pago** y decides si pides un anticipo parcial, el pago total o nada. Cada cobro se hace a nombre de tu negocio y el dinero cae directo en tu cuenta de Mercado Pago: TimeNest no lo retiene ni se queda con comisión.
+Un anticipo reduce las citas que nunca llegan y te asegura parte del ingreso desde el momento en que el cliente reserva. En TimeNest conectas **tu propia cuenta de Mercado Pago** en **Integraciones** y, en **Pagos y anticipos**, decides si pides un anticipo parcial, el pago total o nada. Cada cobro se hace a nombre de tu negocio y el dinero cae directo en tu cuenta de Mercado Pago: TimeNest no lo retiene ni se queda con comisión.
 
 <Note>
   Esta función depende del plan de tu negocio y solo la ve y configura el **Titular**. Necesitas una cuenta de Mercado Pago (personal o de negocio) con la que quieras recibir los cobros.
@@ -14,7 +14,7 @@ Un anticipo reduce las citas que nunca llegan y te asegura parte del ingreso des
 
 <Steps>
   <Step title="Accede a la configuración">
-    Ve a **Ajustes → Operación → Pagos y depósitos**.
+    Ve a **Ajustes → Operación → Integraciones**. La tarjeta **Mercado Pago** está en el grupo **Cobros**. Es el único lugar donde se conecta, reconecta o desconecta la cuenta.
   </Step>
   <Step title="Inicia la conexión">
     Haz clic en **Conectar Mercado Pago** y después en **Continuar a Mercado Pago**. Te llevamos a la página de Mercado Pago en la misma pestaña.
@@ -23,17 +23,19 @@ Un anticipo reduce las citas que nunca llegan y te asegura parte del ingreso des
     Inicia sesión con la cuenta de Mercado Pago donde quieres recibir el dinero y autoriza a TimeNest. Solo le concedes crear cobros a nombre de tu negocio y consultar su estado: TimeNest nunca ve tu contraseña ni tus datos bancarios.
   </Step>
   <Step title="Vuelve a TimeNest">
-    Al terminar regresas automáticamente a **Pagos y depósitos**, donde verás **Conectando tu cuenta…** durante unos segundos y después la tarjeta **Mercado Pago · CONECTADA** con el correo de la cuenta, su ID y quién la conectó.
+    Al terminar regresas automáticamente a **Integraciones**, donde verás **Conectando tu cuenta…** durante unos segundos y después la tarjeta **Mercado Pago** con la etiqueta **CONECTADA**, el correo de la cuenta, su ID y quién la conectó.
   </Step>
 </Steps>
 
-<img src="/images/placeholder.png" alt="Sección Pagos y depósitos con la cuenta de Mercado Pago conectada y la regla de anticipo" />
+<img src="/images/placeholder.png" alt="Tarjeta de Mercado Pago conectada en la sección Integraciones" />
 
 <Note>
   Si cancelas la autorización en Mercado Pago o el enlace caduca, verás **No se completó la conexión** y no se guarda ningún dato. Vuelve a hacer clic en **Conectar Mercado Pago**.
 </Note>
 
 ## Definir la regla de anticipo
+
+Las reglas se configuran en **Ajustes → Operación → Pagos y anticipos** (también llegas con **Configurar anticipos** desde la tarjeta de Mercado Pago). Si todavía no conectas tu cuenta, esta sección solo muestra **Conecta Mercado Pago para cobrar anticipos** con el botón **Ir a Integraciones**.
 
 Con la cuenta conectada aparece la tarjeta **Cobro al reservar · regla general**, que aplica a todas tus sucursales.
 
@@ -67,18 +69,30 @@ Cuando un servicio pide anticipo, la página de reservas cambia en tres puntos:
    - **Mercado Pago**: el cliente va a Mercado Pago y paga con su saldo, tarjetas guardadas, meses sin tarjeta o efectivo, y vuelve a tu página con la cita confirmada.
 3. La pantalla de confirmación muestra **Anticipo pagado** y **Pagas en el local** con lo que resta. El mensaje de WhatsApp de confirmación se envía en cuanto el pago se acredita.
 
-Si el cliente paga en efectivo (por ejemplo en OXXO), el pago tarda horas en acreditarse: la cita queda **Esperando pago** con el horario apartado hasta 24 horas, o hasta 2 horas antes de la cita, lo que ocurra primero. Si no se acredita, el horario se libera. El efectivo solo se ofrece cuando la cita está a 3 horas o más.
+Si el cliente paga en efectivo (por ejemplo en OXXO), el pago tarda horas en acreditarse: la cita queda **Esperando pago** con el horario apartado hasta 24 horas, o hasta 2 horas antes de la cita, lo que ocurra primero. Si no se acredita, el horario se libera y la reserva desaparece de tu panel. El efectivo solo se ofrece cuando la cita está a 3 horas o más.
 
 Si el pago es rechazado, el cliente ve el motivo (**No se te cobró nada**) y puede reintentar con otra tarjeta o pagar con Mercado Pago. Si se agota el tiempo para pagar, ve **Se agotó el tiempo para pagar** y vuelve a elegir horario.
 
 ## Las citas con anticipo en tu panel
 
 - Mientras el cliente paga, la cita aparece en la **Agenda** y en **Citas** con el estado **Esperando pago**. No recibe recordatorios ni cuenta en los reportes hasta que se paga. Si lo prefieres, puedes confirmarla a mano desde el menú de estado: entonces se registra como confirmada **sin cobrar el anticipo**.
-- Al acreditarse el pago, la cita pasa a **Pendiente** como cualquier otra, y el detalle de la cita muestra la línea **Anticipo** con lo pagado y lo que resta en el local.
-- En **Pagos y depósitos**, la tarjeta **Últimos anticipos** lista cada cobro con su estado: **APROBADO**, **PENDIENTE**, **RECHAZADO**, **VENCIDO** o **DEVUELTO**.
+- Al acreditarse el pago, la cita pasa a **Pendiente** como cualquier otra.
+- Si el cliente no paga a tiempo, el horario se libera y la reserva desaparece del panel: no la verás como cancelada en la **Agenda**, en **Citas**, en el historial del cliente ni en **Reportes**, y no se te envía ningún aviso.
+- En **Reportes**, la pestaña **Cobros** resume los anticipos del periodo y lista los movimientos recientes con su estado. Consulta [Reportes](/reportes).
+
+### Ver qué ya se pagó y qué falta cobrar
+
+El pago de cada cita está a la vista donde trabajas, sin abrir la ficha del cliente:
+
+- **Inicio**: en **Próximas citas**, junto al nombre del cliente aparece un sello con el pago: **ANT $75** (anticipo pagado), **PAGADO** (pago total) o **PAGO PEND.** (esperando el pago). En el celular se ve también lo que resta, por ejemplo **resta $175**. La tarjeta **Ingresos** añade cuánto de lo de hoy **ya se cobró online**.
+- **Agenda**: cada cita lleva el mismo sello. En la vista semanal, si la columna es estrecha, solo se ve el icono; pasa el cursor por encima para ver el detalle. En el celular, la cita en curso indica el anticipo pagado y lo que resta cobrar en el local.
+- **Citas**: la tabla suma la columna **Pago**, con el estado del pago y lo que falta cobrar: **Resta $175 en local**, **Nada por cobrar** o **Esperando a Mercado Pago**. En pantallas más angostas (tableta o celular), el pago aparece en la tarjeta de cada cita, junto al estado.
+- **Detalle de la cita** (desde **Ver detalles** del menú de estado, en la agenda o en **Citas**): el bloque **Pago** muestra si fue **Anticipo** (con su porcentaje) o **Pago total**, el total del servicio, lo pagado online, cuándo se pagó y, en grande, lo que queda **Por cobrar en el local**. Si la cita se canceló con el anticipo pagado, recuerda registrar la devolución en **Transacciones** si corresponde.
+
+La columna **Pago** y el bloque **Sin anticipo · se cobra en el local** solo aparecen si tu negocio cobra anticipos.
 
 <Note>
-  **Devoluciones.** TimeNest no devuelve anticipos por su cuenta: la devolución depende de la política de cada negocio y la haces tú, desde tu cuenta de Mercado Pago, en efectivo o por transferencia. Cuando devuelves un cobro desde Mercado Pago, TimeNest lo refleja como **DEVUELTO** en la cita y en **Últimos anticipos**. Si lo devuelves en efectivo o por transferencia, regístralo en la sección **Devoluciones** para que el anticipo quede como **Devuelto**; consulta [Devoluciones](/citas/devoluciones). Al cliente se le avisa en la página de reserva que la devolución depende de la política del negocio.
+  **Devoluciones.** TimeNest no devuelve anticipos por su cuenta: la devolución depende de la política de cada negocio y la haces tú, desde tu cuenta de Mercado Pago, en efectivo o por transferencia. Cuando devuelves un cobro desde Mercado Pago, completo o parcial, TimeNest lo refleja como **DEVUELTO** en la cita y en **Reportes**, y lo agrega a la sección **Transacciones**. Si lo devuelves en efectivo o por transferencia, regístralo en **Transacciones** para que el anticipo quede como **Devuelto**; consulta [Transacciones](/citas/transacciones). Al cliente se le avisa en la página de reserva que la devolución depende de la política del negocio.
 </Note>
 
 <Note>
@@ -87,7 +101,7 @@ Si el pago es rechazado, el cliente ve el motivo (**No se te cobró nada**) y pu
 
 ## Reconectar o desconectar la cuenta
 
-La autorización que le das a TimeNest dura aproximadamente seis meses y TimeNest la renueva sola. Si Mercado Pago revoca el acceso (por ejemplo, porque lo quitaste desde tu cuenta) o la renovación falla, la tarjeta muestra **RECONEXIÓN NECESARIA**: hasta que hagas clic en **Reconectar**, las reservas nuevas se confirman **sin anticipo**.
+Ambas acciones están en la tarjeta **Mercado Pago** de **Ajustes → Operación → Integraciones**. La autorización que le das a TimeNest dura aproximadamente seis meses y TimeNest la renueva sola. Si Mercado Pago revoca el acceso (por ejemplo, porque lo quitaste desde tu cuenta) o la renovación falla, la tarjeta muestra **RECONEXIÓN NECESARIA**: hasta que hagas clic en **Reconectar**, las reservas nuevas se confirman **sin anticipo** y en **Pagos y anticipos** no puedes cambiar las reglas.
 
 Para dejar de cobrar anticipos, haz clic en **Desconectar** y confirma. Las reservas nuevas se confirmarán sin anticipo; los anticipos ya cobrados siguen en tu cuenta de Mercado Pago. Si hay anticipos en curso (por ejemplo, un pago en efectivo que aún no se acredita), espera a que se acrediten o venzan antes de desconectar.
 
