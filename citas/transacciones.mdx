@@ -1,0 +1,87 @@
+---
+title: "Consulta tus transacciones y registra devoluciones"
+sidebarTitle: "Transacciones"
+description: "Ve en un solo lugar los anticipos que pagan tus clientes, lo que se cobra en el local al completar cada cita y las devoluciones, y registra las devoluciones en efectivo o por transferencia."
+---
+
+La sección **Transacciones** reúne el dinero que se mueve con tus citas:
+
+- **Anticipo**: lo que el cliente pagó por Mercado Pago al reservar.
+- **Cobro en local**: lo que se cobra en tu negocio al completar la cita, es decir, el precio menos el anticipo que conservas. TimeNest lo registra solo cuando termina la cita; es una estimación, porque no registra los pagos que recibes en caja.
+- **Devolución**: el dinero que le devolviste a un cliente.
+
+Reemplaza a la sección **Devoluciones**: si tenías guardado ese enlace, te lleva aquí.
+
+<Note>
+  Los anticipos solo aparecen si cobras con Mercado Pago al reservar. Consulta [Anticipos con Mercado Pago](/citas/anticipos-con-mercado-pago).
+</Note>
+
+## Ver tus transacciones
+
+Abre **Transacciones** en el menú lateral. Arriba verás cuatro totales del periodo:
+
+- **Cobrado online**: los anticipos que entraron por Mercado Pago.
+- **Cobrado en local**: el precio menos el anticipo de las citas completadas.
+- **Devuelto**: lo que devolviste y en cuántas devoluciones.
+- **Neto**: lo cobrado online más lo cobrado en local, menos lo devuelto.
+
+Debajo está la lista de movimientos, del más reciente al más antiguo, con la **Fecha**, el **Cliente** (con el servicio y el profesional), el **Movimiento** (qué tipo es y cómo se registró) y el **Monto**. Las devoluciones se muestran en negativo. Bajo el monto de un anticipo puede aparecer una nota:
+
+- **Pendiente**: el pago todavía no se acredita y no cuenta en los totales.
+- **Cita cancelada**: el cliente pagó el anticipo, pero la cita se canceló.
+- **Devuelto**: el anticipo ya se devolvió.
+- **Contracargo**: el cliente desconoció el cobro ante su banco.
+
+Para acotar la lista:
+
+- Usa las pestañas **Todas**, **Anticipos**, **En local** y **Devoluciones**; cada una muestra cuántos movimientos tiene.
+- Filtra por **Profesional** para ver solo sus citas; los totales también se ajustan.
+- Cambia el periodo: **Últimos 7 días**, **Últimos 30 días** (el predeterminado), **Últimos 90 días** o **Último año**.
+- Escribe en **Buscar por ID de cita o cliente** la referencia corta de la cita (por ejemplo, `C3A9F1`) o el nombre o teléfono del cliente.
+
+En el celular, los totales se resumen en una tarjeta **Neto** con lo cobrado online, en local y lo devuelto, y los filtros aparecen como botones que puedes deslizar.
+
+<img src="/images/placeholder.png" alt="Sección Transacciones con los totales del periodo, las pestañas por tipo y la lista de movimientos" />
+
+<Info>
+  Cada movimiento se cuenta en la fecha en que ocurrió: el pago del anticipo, el final de la cita o el registro de la devolución. En [Reportes](/reportes), la pestaña **Cobros** cuenta por la fecha de la cita, así que sus cifras pueden diferir un poco.
+</Info>
+
+## Registrar una devolución
+
+Las devoluciones que haces desde tu cuenta de Mercado Pago, completas o parciales, se registran solas. Registra aquí las que hagas en efectivo o por transferencia, cuando ya hayas devuelto el dinero.
+
+<Steps>
+  <Step title="Elige la cita">
+    Si el anticipo es de una cita cancelada, haz clic en **Devolver** en su fila: el formulario se abre con la cita elegida. Para cualquier otra cita, haz clic en **Registrar devolución** (en el celular, el botón **+** de la parte superior) y escribe la referencia de la cita o el nombre del cliente. Solo aparecen citas con anticipo pagado; las que ya tienen una devolución aparecen como **Ya registrada** y no se pueden elegir. Si te equivocaste, usa **Cambiar**.
+  </Step>
+  <Step title="Indica el monto y cómo lo devolviste">
+    El **Monto** viene con el anticipo completo; puedes cambiarlo si devolviste solo una parte, pero nunca puede superar el anticipo. En **Cómo se devolvió**, elige **Efectivo** o **Transferencia**. Si quieres, agrega una **Nota**, por ejemplo quién entregó el dinero.
+  </Step>
+  <Step title="Confirma">
+    Haz clic en **Registrar devolución**. Verás el aviso **Devolución de $… registrada** y la devolución aparecerá resaltada al principio de la lista.
+  </Step>
+</Steps>
+
+<Warning>
+  Cada cita admite una sola devolución y no se puede editar ni borrar después de registrarla. Revisa el monto y el medio antes de confirmar.
+</Warning>
+
+## Qué cambia al registrar una devolución
+
+- El anticipo de la cita pasa a **Devuelto**. El detalle de la cita muestra lo que realmente se devolvió y cómo, y la ficha del cliente lo marca en su historial.
+- La página de la cita del cliente le indica que el negocio devolvió su anticipo, con el monto devuelto.
+- La cita conserva su estado (por ejemplo, **Cancelada**): registrar una devolución no cancela ni modifica la cita.
+
+<Tip>
+  Cuando devuelves un anticipo desde tu cuenta de Mercado Pago, TimeNest marca la cita como **Devuelto** y agrega la devolución a la lista con el medio **Mercado Pago · automático**. Si la devolución fue parcial, se registra con el monto que devolviste.
+</Tip>
+
+## Quién puede ver transacciones y registrar devoluciones
+
+El Titular siempre puede. Para que un Gerente o un Profesional acceda, actívalo en **Ajustes → Negocio → Permisos**, grupo **Dinero**:
+
+- **Ver transacciones**: permite ver la sección y sus totales.
+- **Registrar devoluciones**: permite registrar devoluciones en efectivo o por transferencia (incluye ver la sección).
+
+Ambos vienen desactivados por defecto. Un Gerente solo ve los movimientos de las citas de sus sucursales, y un Profesional, solo los de sus propias citas. Consulta [Usuarios y roles](/cuenta/usuarios-y-roles).
