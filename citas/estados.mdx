@@ -60,6 +60,8 @@ En ocasiones necesitarás actualizar el estado de una cita sin esperar a que el 
   </Step>
   <Step title="Selecciona el nuevo estado">
     Elige **Pendiente**, **Confirmada**, **No asistió** o **Cancelada**. Cancelar y marcar una falta piden confirmación antes de aplicarse. El cambio se guarda de inmediato.
+
+    Si la cita ya terminó, el menú la muestra como **Completada** (asignado automáticamente porque la fecha y hora ya pasaron) y, bajo **¿El cliente no vino?**, solo ofrece **Marcar como no asistió**.
   </Step>
 </Steps>
 
@@ -69,7 +71,7 @@ Ten en cuenta estas reglas:
 
 - **Pendiente** y **Confirmada** se pueden alternar hasta que termine el horario de la cita. Pasar una cita **Esperando pago** a cualquiera de los dos la confirma sin cobrar el anticipo.
 - **No asistió** solo está disponible una vez que la cita ya empezó, y solo para citas pendientes o confirmadas. Es irreversible.
-- Una vez que la cita terminó, ya no se puede confirmar ni cancelar: verás el aviso **Esta cita ya se completó: su estado ya no se puede cambiar**.
+- Una vez que la cita terminó, ya no se puede confirmar ni cancelar. Si estaba pendiente o confirmada, queda como **Completada** y el único cambio posible es **Marcar como no asistió**, que suma una falta a la ficha del cliente y no se deshace.
 - Al reactivar una cita cancelada, TimeNest verifica que el hueco siga libre. Si otra cita lo ocupó, verás el aviso **Ese horario ya está ocupado por otra cita**.
 
 <Note>
