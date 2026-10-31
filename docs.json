@@ -94,7 +94,8 @@
         "group": "Cuenta",
         "pages": [
           "cuenta/usuarios-y-roles",
-          "cuenta/seguridad"
+          "cuenta/seguridad",
+          "cuenta/novedades"
         ]
       },
       {
