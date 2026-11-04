@@ -26,7 +26,7 @@
     "primary": {
       "type": "button",
       "label": "Empieza gratis",
-      "href": "https://timenest.app/registro"
+      "href": "https://www.timenest.app/registro"
     }
   },
   "navigation": {
@@ -109,7 +109,7 @@
   },
   "footer": {
     "socials": {
-      "website": "https://timenest.app"
+      "website": "https://www.timenest.app"
     }
   },
   "logo": {
