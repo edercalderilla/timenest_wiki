@@ -20,6 +20,12 @@ TimeNest tiene tres roles. Cada uno define un nivel de acceso diferente al panel
 Solo puede haber un Titular por cuenta y la titularidad no se puede transferir desde el panel.
 </Note>
 
+### El rol es por negocio
+
+El rol de **Gerente** o **Profesional** pertenece a tu negocio, no a la cuenta de la persona. Si alguien forma parte de varios negocios en TimeNest, en cada uno tiene el rol que le asignó ese Titular, y cambiarlo en uno no afecta a los demás.
+
+Esto también aplica al Titular de otro negocio: si lo invitas al tuyo, entra con el rol que elijas en la invitación (**Profesional** salvo que lo invites como **Gerente**), nunca con privilegios de Titular. Dentro de tu negocio solo puede hacer lo que su rol y los permisos del nivel le permiten, y tú puedes ascenderlo o degradarlo después como a cualquier otro miembro.
+
 ## Invitar un usuario
 
 Al invitar a alguien, esa persona recibirá un correo para crear su acceso y quedará vinculada a tu negocio con el rol que le asignes.
@@ -50,20 +56,27 @@ Con el **Plan Gratis**, el equipo puede tener un máximo de 2 fichas de profesio
 
 ## Cambiar el rol de un usuario
 
-El rol se define al dar acceso al panel y después no se puede cambiar desde la ficha: al editarla verás el aviso **El rol se definió al dar acceso; para cambiarlo, elimina el acceso y vuelve a invitar**. Para cambiar el rol de un miembro:
+El rol se elige al invitar y el Titular puede cambiarlo después sin eliminar el acceso ni volver a invitar:
 
-1. Ve a **Ajustes → Negocio → Equipo** y abre su ficha con **Editar**.
-2. Elimina su acceso.
-3. Vuelve a invitarlo con el rol nuevo.
+1. Ve a **Ajustes → Negocio → Equipo** y abre la ficha del miembro con **Editar**.
+2. En **Rol en el negocio**, elige **Gerente** o **Profesional** y guarda.
+
+El cambio aplica solo en tu negocio y la persona lo toma al recargar el panel; no necesita cerrar sesión. Solo el Titular puede cambiar roles (un Gerente con permiso de **Equipo** no puede), y el rol de Titular no se asigna ni se quita desde aquí.
+
+<Note>
+Una ficha que todavía no tiene acceso (sin cuenta vinculada o con la invitación pendiente) no tiene rol que cambiar: el rol se fija cuando la persona acepta la invitación. Si te equivocaste de rol en una invitación pendiente, cancélala y vuelve a invitar.
+</Note>
 
 ## Permisos por nivel
 
 Además de los roles, TimeNest te permite ajustar permisos específicos para cada nivel. Estos controles viven en **Ajustes → Negocio → Permisos**, solo el Titular puede editarlos, y aplican a todos los miembros del nivel correspondiente (**Gerente** o **Profesional**), no a personas individuales. Los permisos acotan, nunca amplían: un profesional sigue viendo únicamente sus propias citas.
 
+Al crear tu negocio, el **Gerente** empieza con todos los permisos activos y el **Profesional** con los de operación de citas más **Mensajes a clientes**. Los valores por defecto que se indican abajo son los del Profesional.
+
 Selecciona el nivel que quieres configurar y activa o desactiva cada fila. Los permisos disponibles son:
 
 <Accordion title="Secciones del panel">
-  Controla qué secciones del menú puede ver el nivel: **Panel de inicio**, **Agenda**, **Citas** y **Mensajes a clientes**. Por defecto están activas las tres primeras.
+  Controla qué secciones del menú puede ver el nivel: **Panel de inicio**, **Agenda**, **Citas** y **Mensajes a clientes**. Por defecto están activas las cuatro.
 </Accordion>
 
 <Accordion title="Citas">
@@ -96,7 +109,7 @@ Selecciona el nivel que quieres configurar y activa o desactiva cada fila. Los p
   Ambos vienen desactivados por defecto. Consulta [Transacciones](/citas/transacciones).
 </Accordion>
 
-Usa **Todo** o **Nada** para activar o desactivar un grupo completo, y **Restaurar valores por defecto** para volver a la configuración inicial. Haz clic en **Guardar permisos** para aplicar los cambios. El lateral derecho te muestra una vista previa del menú que verá ese nivel.
+Usa **Todo** o **Nada** para activar o desactivar un grupo completo, y **Restaurar valores por defecto** para volver a la configuración inicial de ese nivel. Haz clic en **Guardar permisos** para aplicar los cambios. El lateral derecho te muestra una vista previa del menú que verá ese nivel.
 
 <img src="/images/placeholder.png" alt="Pantalla de permisos por nivel con los grupos Secciones del panel, Citas, Clientes, Ajustes, Autoservicio y Dinero" />
 
