@@ -23,7 +23,7 @@ Con estos pasos registras una nueva cita directamente desde el panel. El botón 
     En **Cliente**, busca al cliente por nombre, teléfono o correo. Si no existe aún, haz clic en **Cliente nuevo** y registra su nombre y teléfono en ese momento. Debajo del cliente puedes escribir **Notas (opcional)** con cualquier indicación relevante para el profesional; el cliente no verá estas notas.
   </Step>
   <Step title="Selecciona el servicio">
-    Elige el **Servicio** que se va a realizar. La duración y el precio se cargan de forma automática.
+    Elige el **Servicio** que se va a realizar. La duración y el precio se cargan de forma automática. Si el servicio tiene activado **Permite cantidad**, aparecen además los campos **Cantidad** y **Duración** (consulta [Agendar más de una unidad del mismo servicio](#agendar-más-de-una-unidad-del-mismo-servicio)).
   </Step>
   <Step title="Selecciona el profesional">
     Elige al **Profesional** que atenderá la cita. Solo aparecen los profesionales activos de esa sucursal que prestan el servicio elegido.
@@ -41,6 +41,29 @@ Con estos pasos registras una nueva cita directamente desde el panel. El botón 
 
 <Note>
   Las citas creadas desde el panel no pasan por la anticipación mínima de reserva ni por la verificación por SMS: esas reglas aplican solo a la página pública.
+</Note>
+
+## Agendar más de una unidad del mismo servicio
+
+Si en una misma cita vas a hacer el servicio varias veces (por ejemplo, tres resinas), puedes registrarlo como una sola cita con cantidad. Primero activa **Permite cantidad** en el servicio, en **Ajustes → Negocio → [Servicios y precios](/configuracion/servicios)**.
+
+Al crear la cita desde el panel o la app y elegir ese servicio:
+
+- **Cantidad**: indica cuántas unidades se harán, de 1 a 20. El total de la cita es el precio del servicio multiplicado por la cantidad.
+- **Duración**: TimeNest sugiere la duración del servicio multiplicada por la cantidad, y puedes ajustarla si en la práctica te toma menos o más tiempo. Los huecos disponibles se calculan con esa duración.
+
+La cita aparece en la Agenda, en Citas y en Transacciones con la cantidad junto al nombre del servicio, por ejemplo **Resina ×3**.
+
+### Cambiar la cantidad de una cita
+
+Si durante la atención resulta que hiciste más o menos unidades, abre la cita, entra a **Ver detalles**, ajusta **Cantidad** y haz clic en **Guardar**. TimeNest recalcula el total de la cita; el horario no cambia.
+
+- Puedes cambiar la cantidad aunque la cita ya haya terminado, pero no si está cancelada o marcada como no asistió.
+- Si el cliente ya pagó un anticipo, el nuevo total no puede quedar por debajo de lo pagado.
+- Necesitas el permiso para editar citas.
+
+<Note>
+  La cantidad solo se puede indicar desde el panel y la app. En tu página de reservas los clientes siguen agendando el servicio de una unidad; si necesitan más, ajusta la cantidad desde el detalle de la cita.
 </Note>
 
 ## Cancelar una cita
@@ -74,4 +97,4 @@ Sigue estos pasos para cancelar una cita existente y liberar el hueco.
 
 ## Cambiar la fecha, el horario o el profesional
 
-Por ahora no es posible editar una cita ya registrada desde el panel. Si necesitas moverla de fecha, de horario o de profesional, cancela la cita y crea una nueva con los datos correctos. Si tienes activados los avisos de cancelación y de reserva, el cliente recibe un WhatsApp por cada acción.
+Por ahora no es posible mover una cita ya registrada desde el panel; lo único que se puede editar es la [cantidad](#cambiar-la-cantidad-de-una-cita) en los servicios que la permiten. Si necesitas moverla de fecha, de horario o de profesional, cancela la cita y crea una nueva con los datos correctos. Si tienes activados los avisos de cancelación y de reserva, el cliente recibe un WhatsApp por cada acción.

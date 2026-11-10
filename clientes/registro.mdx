@@ -65,7 +65,28 @@ TimeNest clasifica a cada cliente de forma automática según su historial con t
 
 ## Editar la ficha de un cliente
 
-Abre la ficha del cliente y haz clic en el ícono de lápiz para abrir **Editar ficha**. Puedes cambiar el **Nombre completo** y el **Email**. El **Teléfono** no es editable, porque es el dato con el que TimeNest identifica al cliente. Guarda con **Guardar cambios**.
+Abre la ficha del cliente y haz clic en el ícono de lápiz para abrir **Editar ficha**. Puedes cambiar el **Nombre completo**, el **Teléfono** y el **Email**. Guarda con **Guardar cambios**.
+
+### Cambiar el teléfono de un cliente
+
+Como el teléfono es el dato con el que TimeNest reconoce al cliente, cambiarlo tiene dos efectos:
+
+- **Se actualiza en todas tus sucursales.** Si el cliente tiene ficha en varias sedes con el mismo número, todas pasan al número nuevo. Así los reportes y el bloqueo de reservas online siguen tratándolo como una sola persona.
+- **Su historial se conserva.** Las citas pasadas y futuras siguen en su ficha, y los recordatorios por WhatsApp de sus próximas citas llegan al número nuevo.
+
+### Unir fichas duplicadas
+
+Si el número nuevo ya pertenece a otra ficha en la misma sucursal, TimeNest te muestra a quién pertenece y cuántas citas tiene, y te pide confirmar antes de **Unir fichas**. Pasa, por ejemplo, cuando el cliente reservó desde tu página con su número nuevo y se creó un perfil aparte, porque tu página de reservas no puede saber que es la misma persona.
+
+Al confirmar:
+
+- Las citas de la otra ficha pasan a la ficha que estás editando, junto con el historial de mensajes enviados.
+- La otra ficha desaparece de **Clientes**.
+- La ficha conserva el nombre que escribiste. Si alguna de las dos tenía las reservas online bloqueadas, la ficha unida queda bloqueada.
+
+<Warning>
+  Unir fichas no se puede deshacer. Revisa el nombre y el número de citas de la otra ficha antes de confirmar.
+</Warning>
 
 ## Bloquear las reservas online de un cliente
 
