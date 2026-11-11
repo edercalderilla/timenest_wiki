@@ -23,10 +23,10 @@ Con estos pasos registras una nueva cita directamente desde el panel. El botón 
     En **Cliente**, busca al cliente por nombre, teléfono o correo. Si no existe aún, haz clic en **Cliente nuevo** y registra su nombre y teléfono en ese momento. Debajo del cliente puedes escribir **Notas (opcional)** con cualquier indicación relevante para el profesional; el cliente no verá estas notas.
   </Step>
   <Step title="Selecciona el servicio">
-    Elige el **Servicio** que se va a realizar. La duración y el precio se cargan de forma automática. Si el servicio tiene activado **Permite cantidad**, aparecen además los campos **Cantidad** y **Duración** (consulta [Agendar más de una unidad del mismo servicio](#agendar-más-de-una-unidad-del-mismo-servicio)).
+    En **Servicios**, marca el servicio que se va a realizar. La duración y el precio se cargan de forma automática. Si el servicio tiene activado **Permite cantidad**, aparece además su **Cantidad** (consulta [Agendar más de una unidad del mismo servicio](#agendar-más-de-una-unidad-del-mismo-servicio)). Si en la misma visita se harán más servicios, márcalos también (consulta [Agendar varios servicios en una misma cita](#agendar-varios-servicios-en-una-misma-cita)).
   </Step>
   <Step title="Selecciona el profesional">
-    Elige al **Profesional** que atenderá la cita. Solo aparecen los profesionales activos de esa sucursal que prestan el servicio elegido.
+    Elige al **Profesional** que atenderá la cita. Solo aparecen los profesionales activos de esa sucursal que prestan el servicio elegido; si la cita lleva varios servicios, los que prestan todos.
   </Step>
   <Step title="Elige la fecha y el hueco disponible">
     Selecciona la **Fecha** en la tira de días o en el mini calendario (**Elegir otra fecha**) y haz clic en la **Hora** que quieras asignar. Solo se muestran los huecos que no están ocupados. Si no hay huecos, TimeNest te indica el motivo (sede cerrada, profesional ausente, agenda llena, etc.).
@@ -43,6 +43,51 @@ Con estos pasos registras una nueva cita directamente desde el panel. El botón 
   Las citas creadas desde el panel no pasan por la anticipación mínima de reserva ni por la verificación por SMS: esas reglas aplican solo a la página pública.
 </Note>
 
+## Agendar varios servicios en una misma cita
+
+Cuando en una sola visita se van a realizar distintos servicios (por ejemplo, en un consultorio dental, una limpieza y una resina después de la valoración), regístralos como una sola cita en lugar de crear una por servicio.
+
+Al crear la cita desde el panel o la app:
+
+1. En **Servicios**, marca cada servicio que se hará en la visita. Una cita admite hasta 8 servicios distintos.
+   - Si tu negocio tiene **12 servicios o menos**, los ves todos como tarjetas con una casilla: marca los que necesites. Cada tarjeta marcada muestra su posición (**#1**, **#2**…).
+   - Si tiene **más de 12**, haz clic en **Agregar servicio**, marca los que necesites en la lista (puedes usar **Buscar servicio**) y haz clic en **Listo**. Los servicios elegidos quedan en una lista numerada.
+   - Desde un teléfono (y en la app) los servicios se eligen siempre de esta segunda forma, sin importar cuántos tengas: toca **Elegir servicio**, marca los que necesites y toca **Listo**.
+2. Si alguno tiene activado **Permite cantidad**, ajusta sus unidades con los botones **−** y **+** de ese servicio.
+3. Revisa **Duración → Tiempo reservado**: TimeNest sugiere la suma de la duración de todos los servicios y puedes ajustarla. Los huecos disponibles se calculan con esa duración.
+
+Los servicios se atienden en el orden en que los marcaste, y así aparecen en el **Resumen** (**Servicios, en orden de atención**). En la lista numerada puedes arrastrar un servicio para cambiar su posición.
+
+Ten en cuenta:
+
+- **Un solo profesional** atiende toda la cita, un servicio tras otro, en un solo bloque de la agenda. Por eso solo puedes agregar servicios que ese profesional preste; si aún no lo eliges, solo aparecen los profesionales que prestan todos los servicios.
+- El **Total** es la suma de los precios de los servicios (cada uno multiplicado por su cantidad).
+- Para quitar un servicio antes de confirmar, desmarca su casilla o usa el ícono de papelera de su fila.
+- Si un servicio aparece atenuado y no se puede marcar, es porque ningún profesional de la sucursal presta también todos los servicios que ya elegiste.
+- Un mismo servicio no se repite en la lista: si se hará varias veces, usa su cantidad.
+
+La cita aparece en la Agenda, en Citas, en la ficha del cliente y en Transacciones con todos sus servicios, por ejemplo **Limpieza + Resina ×2**. En los mensajes de WhatsApp al cliente y al profesional los servicios aparecen juntos, sin la cantidad (**Limpieza + Resina**).
+
+### Agregar o quitar servicios en una cita ya creada
+
+Si durante la atención decides hacer un servicio más (o uno de los previstos no se realizó), abre la cita, entra a **Ver detalles** y, en **Servicios**:
+
+- Haz clic en **Agregar servicio** para sumar otro. Solo aparecen los servicios que presta el profesional de la cita y entran con su precio actual.
+- Usa el ícono de papelera para quitar un servicio. La cita siempre conserva al menos uno.
+- Ajusta las unidades de los servicios que permiten cantidad.
+
+Antes de guardar verás el **Nuevo total**. Haz clic en **Guardar** para aplicar los cambios.
+
+- **El horario no cambia.** Agregar un servicio no alarga la cita en la agenda; si necesitas más tiempo, cancela la cita y crea una nueva con la duración correcta.
+- Los servicios que la cita ya tenía conservan el precio con el que se agendaron, aunque después hayas cambiado el precio en el catálogo.
+- Puedes editar los servicios aunque la cita ya haya terminado, pero no si está cancelada o marcada como no asistió.
+- Si el cliente ya pagó un anticipo, el nuevo total no puede quedar por debajo de lo pagado.
+- Necesitas el permiso para editar citas.
+
+<Note>
+  Varios servicios en una cita solo se pueden registrar desde el panel y la app. En tu página de reservas los clientes siguen agendando un servicio por cita; si necesitan más, agrégalos desde el detalle de la cita.
+</Note>
+
 ## Agendar más de una unidad del mismo servicio
 
 Si en una misma cita vas a hacer el servicio varias veces (por ejemplo, tres resinas), puedes registrarlo como una sola cita con cantidad. Primero activa **Permite cantidad** en el servicio, en **Ajustes → Negocio → [Servicios y precios](/configuracion/servicios)**.
@@ -56,7 +101,7 @@ La cita aparece en la Agenda, en Citas y en Transacciones con la cantidad junto 
 
 ### Cambiar la cantidad de una cita
 
-Si durante la atención resulta que hiciste más o menos unidades, abre la cita, entra a **Ver detalles**, ajusta **Cantidad** y haz clic en **Guardar**. TimeNest recalcula el total de la cita; el horario no cambia.
+Si durante la atención resulta que hiciste más o menos unidades, abre la cita, entra a **Ver detalles**, ajusta las unidades del servicio en **Servicios** y haz clic en **Guardar**. TimeNest recalcula el total de la cita; el horario no cambia.
 
 - Puedes cambiar la cantidad aunque la cita ya haya terminado, pero no si está cancelada o marcada como no asistió.
 - Si el cliente ya pagó un anticipo, el nuevo total no puede quedar por debajo de lo pagado.
@@ -97,4 +142,4 @@ Sigue estos pasos para cancelar una cita existente y liberar el hueco.
 
 ## Cambiar la fecha, el horario o el profesional
 
-Por ahora no es posible mover una cita ya registrada desde el panel; lo único que se puede editar es la [cantidad](#cambiar-la-cantidad-de-una-cita) en los servicios que la permiten. Si necesitas moverla de fecha, de horario o de profesional, cancela la cita y crea una nueva con los datos correctos. Si tienes activados los avisos de cancelación y de reserva, el cliente recibe un WhatsApp por cada acción.
+Por ahora no es posible mover una cita ya registrada desde el panel; lo único que se puede editar son sus [servicios](#agregar-o-quitar-servicios-en-una-cita-ya-creada) y la [cantidad](#cambiar-la-cantidad-de-una-cita) en los servicios que la permiten. Si necesitas moverla de fecha, de horario o de profesional, cancela la cita y crea una nueva con los datos correctos. Si tienes activados los avisos de cancelación y de reserva, el cliente recibe un WhatsApp por cada acción.
