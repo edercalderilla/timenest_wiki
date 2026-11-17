@@ -45,6 +45,7 @@
         "pages": [
           "configuracion/servicios",
           "configuracion/horarios",
+          "configuracion/espacio-compartido",
           "configuracion/bloqueos-y-dias-festivos",
           "configuracion/personal",
           "configuracion/integraciones"
