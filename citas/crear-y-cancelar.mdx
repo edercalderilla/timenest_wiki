@@ -26,7 +26,7 @@ Con estos pasos registras una nueva cita directamente desde el panel. El botón 
     En **Servicios**, marca el servicio que se va a realizar. La duración y el precio se cargan de forma automática. Si el servicio tiene activado **Permite cantidad**, aparece además su **Cantidad** (consulta [Agendar más de una unidad del mismo servicio](#agendar-más-de-una-unidad-del-mismo-servicio)). Si en la misma visita se harán más servicios, márcalos también (consulta [Agendar varios servicios en una misma cita](#agendar-varios-servicios-en-una-misma-cita)).
   </Step>
   <Step title="Selecciona el profesional">
-    Elige al **Profesional** que atenderá la cita. Solo aparecen los profesionales activos de esa sucursal que prestan el servicio elegido; si la cita lleva varios servicios, los que prestan todos.
+    Elige al **Profesional** que atenderá la cita. Solo aparecen los profesionales activos de esa sucursal que prestan el servicio elegido; si la cita lleva varios servicios, los que prestan todos. Si solo uno de ellos puede atenderla, ya viene seleccionado.
   </Step>
   <Step title="Elige la fecha y el hueco disponible">
     Selecciona la **Fecha** en la tira de días o en el mini calendario (**Elegir otra fecha**) y haz clic en la **Hora** que quieras asignar. Solo se muestran los huecos que no están ocupados. Si no hay huecos, TimeNest te indica el motivo (sede cerrada, profesional ausente, agenda llena, etc.). En una sucursal con [espacio compartido](/configuracion/espacio-compartido) tampoco aparecen los horarios en los que el espacio ya está ocupado por otro profesional.
@@ -80,7 +80,8 @@ Antes de guardar verás el **Nuevo total**. Haz clic en **Guardar** para aplicar
 
 - **El horario no cambia.** Agregar un servicio no alarga la cita en la agenda; si necesitas más tiempo, cancela la cita y crea una nueva con la duración correcta.
 - Los servicios que la cita ya tenía conservan el precio con el que se agendaron, aunque después hayas cambiado el precio en el catálogo.
-- Puedes editar los servicios aunque la cita ya haya terminado, pero no si está cancelada o marcada como no asistió.
+- Puedes editar los servicios aunque la cita ya haya terminado, pero solo hasta el fin de ese día (las 23:59 en la zona horaria de la sucursal). Al día siguiente el detalle ya no muestra **Agregar servicio** y el total queda fijo para que tus cobros y reportes no cambien.
+- No puedes editarlos si la cita está cancelada o marcada como no asistió.
 - Si el cliente ya pagó un anticipo, el nuevo total no puede quedar por debajo de lo pagado.
 - Necesitas el permiso para editar citas.
 
@@ -103,7 +104,8 @@ La cita aparece en la Agenda, en Citas y en Transacciones con la cantidad junto 
 
 Si durante la atención resulta que hiciste más o menos unidades, abre la cita, entra a **Ver detalles**, ajusta las unidades del servicio en **Servicios** y haz clic en **Guardar**. TimeNest recalcula el total de la cita; el horario no cambia.
 
-- Puedes cambiar la cantidad aunque la cita ya haya terminado, pero no si está cancelada o marcada como no asistió.
+- Puedes cambiar la cantidad aunque la cita ya haya terminado, pero solo hasta el fin de ese día (las 23:59 en la zona horaria de la sucursal).
+- No puedes cambiarla si la cita está cancelada o marcada como no asistió.
 - Si el cliente ya pagó un anticipo, el nuevo total no puede quedar por debajo de lo pagado.
 - Necesitas el permiso para editar citas.
 
