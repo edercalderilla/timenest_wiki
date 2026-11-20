@@ -13,7 +13,7 @@ TimeNest tiene tres roles. Cada uno define un nivel de acceso diferente al panel
 | Rol | Descripción |
 |---|---|
 | **Titular** | El dueño de la cuenta. Tiene acceso completo: perfil del negocio, facturación, plan, permisos, reportes y equipo. Solo puede haber un Titular por cuenta. |
-| **Gerente** | Administra las operaciones del día a día en las sucursales que gestiona: puede crear y cancelar citas, gestionar clientes, y modificar servicios y horarios, según los permisos del nivel Gerente. No puede acceder al perfil del negocio, a los reportes ni a la facturación. |
+| **Gerente** | Administra las operaciones del día a día en las sucursales que gestiona: puede crear y cancelar citas, gestionar clientes, y modificar servicios y horarios, según los permisos del nivel Gerente. No puede acceder al perfil del negocio, a los reportes ni a la facturación, aunque sí ve el consumo de mensajes de WhatsApp del ciclo y el aviso de cuota. |
 | **Profesional** | Ve y gestiona únicamente sus propias citas y su agenda. Sus permisos adicionales los configura el Titular desde **Ajustes → Negocio → Permisos**. |
 
 <Note>
@@ -58,10 +58,12 @@ Con el **Plan Gratis**, el equipo puede tener un máximo de 2 fichas de profesio
 
 El rol se elige al invitar y el Titular puede cambiarlo después sin eliminar el acceso ni volver a invitar:
 
-1. Ve a **Ajustes → Negocio → Equipo** y abre la ficha del miembro con **Editar**.
+1. Ve a **Ajustes → Negocio → Equipo** y abre la ficha del miembro con **Editar**. En la app móvil, entra a **Más → Equipo** y toca su ficha.
 2. En **Rol en el negocio**, elige **Gerente** o **Profesional** y guarda.
 
-El cambio aplica solo en tu negocio y la persona lo toma al recargar el panel; no necesita cerrar sesión. Solo el Titular puede cambiar roles (un Gerente con permiso de **Equipo** no puede), y el rol de Titular no se asigna ni se quita desde aquí.
+Al pasar a alguien de **Profesional** a **Gerente**, sigue atendiendo citas: puedes desactivar **También atiende citas** si solo va a gestionar.
+
+El cambio aplica solo en tu negocio y la persona lo toma la próxima vez que abra o recargue TimeNest; no necesita cerrar sesión. Solo el Titular puede cambiar roles (un Gerente con permiso de **Equipo** no puede), y el rol de Titular no se asigna ni se quita desde aquí.
 
 <Note>
 Una ficha que todavía no tiene acceso (sin cuenta vinculada o con la invitación pendiente) no tiene rol que cambiar: el rol se fija cuando la persona acepta la invitación. Si te equivocaste de rol en una invitación pendiente, cancélala y vuelve a invitar.
